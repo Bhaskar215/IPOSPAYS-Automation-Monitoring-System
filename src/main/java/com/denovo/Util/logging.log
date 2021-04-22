@@ -1,72 +1,158 @@
-2021-03-31 14:42:40 INFO  Denovo:64 - Url is Opened
-  2021-03-31 14:42:40 INFO  Denovo:68 - Window is maximize
-  2021-03-31 14:42:40 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 14:42:40 INFO  Denovo:30 - Title element is found
-  2021-03-31 14:42:40 INFO  Denovo:27 - LoginPage title Passed
-  2021-03-31 14:42:40 INFO  Denovo:48 - Remembercheckbox is clicked
-  2021-03-31 14:42:40 INFO  Denovo:55 - Login Is passed
-  2021-03-31 15:09:32 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:09:32 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:09:32 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:15:24 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:15:24 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:15:24 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:17:16 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:17:16 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:17:16 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:17:16 INFO  Denovo:29 - Homepage title Passed
-  2021-03-31 15:19:41 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:19:41 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:19:41 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:20:58 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:20:58 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:20:58 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:21:33 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:22:19 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:22:20 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:22:20 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:22:50 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:22:50 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:22:50 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:23:06 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:24:03 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:24:03 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:24:03 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:25:17 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:25:18 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:25:18 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:25:18 INFO  Denovo:28 - Homepage title Passed
-  2021-03-31 15:34:48 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:34:48 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:34:48 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:34:48 INFO  Denovo:28 - Homepage title Passed
-  2021-03-31 15:47:44 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:47:44 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:47:44 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:47:59 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:47:59 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:47:59 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:48:00 INFO  Denovo:28 - Homepage title Passed
-  2021-03-31 15:48:07 INFO  Denovo:30 - Title element is found
-  2021-03-31 15:48:07 INFO  Denovo:48 - Remembercheckbox is clicked
-  2021-03-31 15:48:07 INFO  Denovo:55 - Login Is passed
-  2021-03-31 15:50:13 INFO  Denovo:64 - Url is Opened
-  2021-03-31 15:50:13 INFO  Denovo:68 - Window is maximize
-  2021-03-31 15:50:13 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 15:50:38 INFO  Denovo:64 - Url is Opened
-  2021-03-31 16:04:03 INFO  Denovo:64 - Url is Opened
-  2021-03-31 16:04:04 INFO  Denovo:68 - Window is maximize
-  2021-03-31 16:04:04 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 16:04:04 INFO  Denovo:30 - Title element is found
-  2021-03-31 16:04:04 INFO  Denovo:25 - LoginPage title Passed
-  2021-03-31 16:04:04 INFO  Denovo:46 - Remembercheckbox is clicked
-  2021-03-31 16:04:04 INFO  Denovo:53 - Login Is passed
-  2021-03-31 16:32:30 INFO  Denovo:64 - Url is Opened
-  2021-03-31 16:33:00 INFO  Denovo:64 - Url is Opened
-  2021-03-31 16:33:00 INFO  Denovo:68 - Window is maximize
-  2021-03-31 16:33:00 INFO  Denovo:72 - Implicitwait is applied for 30sec
-  2021-03-31 16:33:00 INFO  Denovo:30 - Title element is found
-  2021-03-31 16:33:00 INFO  Denovo:25 - LoginPage title Passed
-  2021-03-31 16:33:01 INFO  Denovo:46 - Remembercheckbox is clicked
-  2021-03-31 16:33:01 INFO  Denovo:53 - Login Is passed
-  
+2021-04-21 11:42:37 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:42:37 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:42:37 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:42:38 INFO  Denovo:40 - usermanagepage title Passed
+2021-04-21 11:47:38 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:47:38 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:47:38 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:48:15 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:48:15 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:48:15 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:48:16 INFO  Denovo:37 - Homepage title Passed
+2021-04-21 11:54:10 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:54:10 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:54:10 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:54:15 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 11:56:14 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:56:14 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:56:15 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:56:22 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 11:58:03 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:58:26 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:58:26 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:58:26 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:58:31 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 11:59:25 INFO  Denovo:64 - Url is Opened
+2021-04-21 11:59:25 INFO  Denovo:68 - Window is maximize
+2021-04-21 11:59:25 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 11:59:26 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 12:01:00 INFO  Denovo:64 - Url is Opened
+2021-04-21 12:01:01 INFO  Denovo:68 - Window is maximize
+2021-04-21 12:01:01 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 12:01:06 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 12:05:48 INFO  Denovo:64 - Url is Opened
+2021-04-21 12:05:48 INFO  Denovo:68 - Window is maximize
+2021-04-21 12:05:48 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 12:05:52 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 13:10:53 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:10:53 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:10:53 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:10:58 INFO  Denovo:41 - usermanagepage title Passed
+2021-04-21 13:22:47 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:22:47 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:22:47 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:23:39 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:23:39 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:23:39 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:23:52 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:23:52 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:23:52 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:23:58 INFO  Denovo:36 - Title element is found
+2021-04-21 13:23:58 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 13:23:58 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 13:23:58 INFO  Denovo:79 - Login Is passed
+2021-04-21 13:23:58 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 13:26:04 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:26:04 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:26:04 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:26:09 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 13:28:13 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:28:14 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:28:14 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:28:30 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:28:30 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:28:30 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:28:34 INFO  Denovo:36 - Title element is found
+2021-04-21 13:28:34 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 13:28:35 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 13:28:35 INFO  Denovo:79 - Login Is passed
+2021-04-21 13:28:35 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 13:29:08 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:29:08 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:29:08 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:29:17 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:29:17 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:29:17 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:29:22 INFO  Denovo:36 - Title element is found
+2021-04-21 13:29:22 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 13:29:22 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 13:29:23 INFO  Denovo:79 - Login Is passed
+2021-04-21 13:29:23 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 13:33:31 INFO  Denovo:64 - Url is Opened
+2021-04-21 13:33:31 INFO  Denovo:68 - Window is maximize
+2021-04-21 13:33:31 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 13:33:36 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 14:50:02 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:50:02 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:50:02 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:50:11 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:50:11 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:50:11 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:50:16 INFO  Denovo:36 - Title element is found
+2021-04-21 14:50:16 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 14:50:16 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 14:50:16 INFO  Denovo:79 - Login Is passed
+2021-04-21 14:50:16 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 14:52:34 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:52:35 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:52:35 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:52:40 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 14:55:32 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:55:32 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:55:32 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:55:42 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:55:42 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:55:42 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:55:47 INFO  Denovo:36 - Title element is found
+2021-04-21 14:55:47 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 14:55:47 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 14:55:47 INFO  Denovo:79 - Login Is passed
+2021-04-21 14:55:47 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 14:58:31 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:58:31 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:58:31 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:58:41 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:58:41 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:58:41 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:58:45 INFO  Denovo:36 - Title element is found
+2021-04-21 14:58:45 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 14:58:46 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 14:58:46 INFO  Denovo:79 - Login Is passed
+2021-04-21 14:58:46 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 14:59:43 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:59:43 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:59:43 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:59:53 INFO  Denovo:64 - Url is Opened
+2021-04-21 14:59:53 INFO  Denovo:68 - Window is maximize
+2021-04-21 14:59:53 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 14:59:57 INFO  Denovo:36 - Title element is found
+2021-04-21 14:59:57 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 14:59:58 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 14:59:58 INFO  Denovo:79 - Login Is passed
+2021-04-21 14:59:58 INFO  Denovo:42 - usermanagepage title Passed
+2021-04-21 15:11:41 INFO  Denovo:64 - Url is Opened
+2021-04-21 15:11:41 INFO  Denovo:68 - Window is maximize
+2021-04-21 15:11:42 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 15:11:53 INFO  Denovo:64 - Url is Opened
+2021-04-21 15:11:53 INFO  Denovo:68 - Window is maximize
+2021-04-21 15:11:53 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 15:11:58 INFO  Denovo:36 - Title element is found
+2021-04-21 15:11:58 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 15:11:58 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 15:11:58 INFO  Denovo:79 - Login Is passed
+2021-04-21 15:11:58 INFO  Denovo:44 - usermanagepage title Passed
+2021-04-21 16:04:34 INFO  Denovo:64 - Url is Opened
+2021-04-21 16:04:34 INFO  Denovo:68 - Window is maximize
+2021-04-21 16:04:34 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 16:04:46 INFO  Denovo:64 - Url is Opened
+2021-04-21 16:04:46 INFO  Denovo:68 - Window is maximize
+2021-04-21 16:04:46 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 16:04:51 INFO  Denovo:36 - Title element is found
+2021-04-21 16:04:51 INFO  Denovo:33 - LoginPage title Passed
+2021-04-21 16:04:52 INFO  Denovo:60 - Remembercheckbox is clicked
+2021-04-21 16:04:52 INFO  Denovo:79 - Login Is passed
+2021-04-21 16:04:52 INFO  Denovo:44 - usermanagepage title Passed
+2021-04-21 17:04:56 INFO  Denovo:64 - Url is Opened
+2021-04-21 17:04:57 INFO  Denovo:68 - Window is maximize
+2021-04-21 17:04:57 INFO  Denovo:72 - Implicitwait is applied for 30sec
+2021-04-21 17:05:02 INFO  Denovo:44 - usermanagepage title Passed

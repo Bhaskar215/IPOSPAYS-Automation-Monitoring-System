@@ -1,0 +1,6 @@
+com\denovo\Util\ExcelUtil.class
+com\denovo\Base\TestBase.class
+com\denovo\Pages\HomePage.class
+com\denovo\Pages\LoginPage.class
+com\denovo\Pages\UserManagePage.class
+com\denovo\Util\TestUtil.class

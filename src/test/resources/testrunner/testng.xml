@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DenovoWebPortal">
+    
+    <parameter name="email" value="test@123"></parameter>
+    <parameter name="fname" value="bhaskar"></parameter>
+    <parameter name="lname" value="murthy"></parameter>
+<test name="loginTest">
+    <classes>
+        <class name="com.denovo.testscripts.LoginPageTest"></class>
+    </classes>
+</test>
+
+    <test name="usermanageTest">
+        <classes>
+            <class name="com.denovo.testscripts.UserManagePageTest"></class>
+        </classes>
+    </test>
+</suite>
+
+
