@@ -79,6 +79,10 @@ public class UserManagePage extends TestBase {
         emailaddress.sendKeys(email);
     }
 
+    public void verifyphone(String phonenumber){
+
+    }
+
     public void verifyclickdropdown(){
         clickdropdown.click();
     }

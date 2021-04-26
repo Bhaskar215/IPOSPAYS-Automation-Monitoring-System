@@ -1,59 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-15T11:10:37 IST" name="DenovoWebPortal" finished-at="2021-04-15T11:10:37 IST" duration-ms="498">
+  <suite started-at="2021-04-26T12:54:57 IST" name="DenovoWebPortal Application Test Suite" finished-at="2021-04-26T12:55:03 IST" duration-ms="5522">
     <groups>
     </groups>
-    <test started-at="2021-04-15T11:10:37 IST" name="DenovoWebTest" finished-at="2021-04-15T11:10:37 IST" duration-ms="498">
+    <test started-at="2021-04-26T12:54:57 IST" name="sanityTest" finished-at="2021-04-26T12:55:03 IST" duration-ms="5522">
       <class name="com.denovo.testscripts.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:05 IST" name="setup" finished-at="2021-04-15T11:10:37 IST" duration-ms="31523" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:54:48 IST" name="setup" finished-at="2021-04-26T12:54:57 IST" duration-ms="9731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateloginpageTitle()[pri:1, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="validateloginpageTitle" description="verifying login Page title test" finished-at="2021-04-15T11:10:37 IST" duration-ms="52" status="PASS">
+        <test-method signature="validateloginpageTitle()[pri:1, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:54:58 IST" name="validateloginpageTitle" description="verifying login Page title test" finished-at="2021-04-26T12:54:58 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateloginpageTitle -->
-        <test-method signature="validatedenovologo()[pri:2, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="validatedenovologo" description="verifying validatedenovolog test" finished-at="2021-04-15T11:10:37 IST" duration-ms="48" status="PASS">
+        <test-method signature="validatedenovologo()[pri:2, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:54:58 IST" name="validatedenovologo" description="verifying validatedenovolog test" finished-at="2021-04-26T12:54:58 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatedenovologo -->
-        <test-method signature="validateRememberme()[pri:3, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="validateRememberme" description="verifying validate Remember me test" finished-at="2021-04-15T11:10:37 IST" duration-ms="57" status="PASS">
+        <test-method signature="validateRememberme()[pri:3, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:54:58 IST" name="validateRememberme" description="verifying validate Remember me test" finished-at="2021-04-26T12:54:58 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRememberme -->
-        <test-method signature="validateForgotlink()[pri:4, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="validateForgotlink" description="verifying validate Remember me test" finished-at="2021-04-15T11:10:37 IST" duration-ms="43" status="PASS">
+        <test-method signature="validateForgotlink()[pri:4, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:54:58 IST" name="validateForgotlink" description="verifying validate Remember me test" finished-at="2021-04-26T12:54:58 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateForgotlink -->
-        <test-method signature="validateloginCorrectCredentialsTest()[pri:5, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="validateloginCorrectCredentialsTest" description="verifying loginCorrectCredentialsTest" finished-at="2021-04-15T11:10:37 IST" duration-ms="59" status="PASS">
+        <test-method signature="validateloginTest(java.lang.String, java.lang.String)[pri:5, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:00 IST" name="validateloginTest" data-provider="webLogin" finished-at="2021-04-26T12:55:01 IST" duration-ms="567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testdata1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateloginCorrectCredentialsTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.denovo.testscripts.LoginPageTest@3246fb96]" started-at="2021-04-15T11:10:37 IST" name="teardown" finished-at="2021-04-15T11:10:43 IST" duration-ms="5661" status="PASS">
+        </test-method> <!-- validateloginTest -->
+        <test-method signature="validateloginTest(java.lang.String, java.lang.String)[pri:5, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:01 IST" name="validateloginTest" data-provider="webLogin" finished-at="2021-04-26T12:55:01 IST" duration-ms="395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[venkat@dejawaypay.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateloginTest -->
+        <test-method signature="validateloginTest(java.lang.String, java.lang.String)[pri:5, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:01 IST" name="validateloginTest" data-provider="webLogin" finished-at="2021-04-26T12:55:01 IST" duration-ms="354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testdata2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SdQTpVupyJXJ54wSpp7x7W5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateloginTest -->
+        <test-method signature="validateloginTest(java.lang.String, java.lang.String)[pri:5, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:01 IST" name="validateloginTest" data-provider="webLogin" finished-at="2021-04-26T12:55:02 IST" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[venkat@dejawaypay.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SdQTpVupyJXJ54wSpp7x7W5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateloginTest -->
+        <test-method signature="validateclickprofile()[pri:6, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:02 IST" name="validateclickprofile" finished-at="2021-04-26T12:55:03 IST" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateclickprofile -->
+        <test-method signature="validatelogout()[pri:7, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:03 IST" name="validatelogout" finished-at="2021-04-26T12:55:03 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatelogout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.denovo.testscripts.LoginPageTest@49dc7102]" started-at="2021-04-26T12:55:03 IST" name="teardown" finished-at="2021-04-26T12:55:10 IST" duration-ms="6698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.denovo.testscripts.LoginPageTest -->
-      <class name="com.denovo.testscripts.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.denovo.testscripts.HomePageTest@2e222612]" started-at="2021-04-15T11:09:45 IST" name="setup" finished-at="2021-04-15T11:10:05 IST" duration-ms="20318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validatehomepageTitle()[pri:1, instance:com.denovo.testscripts.HomePageTest@2e222612]" started-at="2021-04-15T11:10:37 IST" name="validatehomepageTitle" finished-at="2021-04-15T11:10:37 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatehomepageTitle -->
-        <test-method signature="validatehomepagelogo()[pri:2, instance:com.denovo.testscripts.HomePageTest@2e222612]" started-at="2021-04-15T11:10:37 IST" name="validatehomepagelogo" finished-at="2021-04-15T11:10:37 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatehomepagelogo -->
-        <test-method signature="validateusermanagelink()[pri:4, instance:com.denovo.testscripts.HomePageTest@2e222612]" started-at="2021-04-15T11:10:37 IST" name="validateusermanagelink" finished-at="2021-04-15T11:10:37 IST" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateusermanagelink -->
-      </class> <!-- com.denovo.testscripts.HomePageTest -->
-    </test> <!-- DenovoWebTest -->
-  </suite> <!-- DenovoWebPortal -->
+    </test> <!-- sanityTest -->
+  </suite> <!-- DenovoWebPortal Application Test Suite -->
 </testng-results>

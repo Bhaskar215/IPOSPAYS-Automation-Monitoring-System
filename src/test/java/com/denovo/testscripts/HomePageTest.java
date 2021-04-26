@@ -1,3 +1,4 @@
+
 package com.denovo.testscripts;
 
 import com.denovo.Base.TestBase;
@@ -22,7 +23,7 @@ public class HomePageTest extends TestBase {
     public void setup() {
         initialization();
         loginPage = new LoginPage();
-        homepage = loginPage.verifylogin();
+        homepage = loginPage.verifylogin(pro.getProperty("username"),pro.getProperty("password"));
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -33,7 +34,7 @@ public class HomePageTest extends TestBase {
     @Test(priority = 1)
     public void validatehomepageTitle() {
 
-        if(homepage.verifyhomePageTitle().equals("Denovo System")) {
+        if(homepage.verifyhomePageTitle().equals("Dejavoo System")) {
             logger.info("Homepage title Passed");
             Assert.assertTrue(true);
         }

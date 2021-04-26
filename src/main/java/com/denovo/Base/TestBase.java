@@ -19,9 +19,9 @@ public class TestBase {
     public static WebDriver driver;
     public static Logger logger;
 
-    File f;
-    FileInputStream fis;
-    static Properties pro;
+    public File f;
+    public FileInputStream fis;
+    public static Properties pro;
 
     //constructor
     public TestBase() {

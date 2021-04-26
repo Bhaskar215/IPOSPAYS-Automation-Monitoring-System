@@ -2,10 +2,9 @@ package com.denovo.testscripts;
 
 import com.denovo.Base.TestBase;
 import com.denovo.Pages.LoginPage;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import com.denovo.Util.DataProviderClass;
+import com.google.gson.annotations.SerializedName;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -29,7 +28,7 @@ public class LoginPageTest extends TestBase {
     @Test(priority = 1,description = "verifying login Page title test")
 
     public void validateloginpageTitle() {
-        if(loginpage.verifyLoginPageTitle().equals("Denovo System")) {
+        if(loginpage.verifyLoginPageTitle().equals("Dejavoo System")) {
             logger.info("LoginPage title Passed");
             Assert.assertTrue(true);
         }
@@ -52,7 +51,6 @@ public class LoginPageTest extends TestBase {
 
 
     @Severity(SeverityLevel.NORMAL)
-    @Description("Test Case Description: validate Rememberme  test on Login Page")
     @Story("story Name: To Check validateRememberme ")
     @Test(priority =3 ,description = "verifying validate Remember me test")
     public void validateRememberme() {
@@ -71,19 +69,36 @@ public class LoginPageTest extends TestBase {
 
 
     @Severity(SeverityLevel.BLOCKER)
-    @Description("Test Case Description: validateloginbtn test on Login Page")
     @Story("story Name: To Check LoginPage func")
-    @Test(priority = 5,description = "verifying loginCorrectCredentialsTest")
-    public void validateloginCorrectCredentialsTest() {
-        loginpage.verifylogin();
+    @Description("Test Description: Invalid Username and Password,Valid Username and Invalid Password")
+    @Step("Login Step with username: {0}, password :{1}")
+
+    @Test(priority = 5,dataProvider = "webLogin",dataProviderClass = DataProviderClass.class)
+    public void validateloginTest(String username,String password) {
+        loginpage.verifylogin(username, password);
         logger.info("Login Is passed");
     }
 
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story Name: To check ClickProfile")
+    @Description("Test Description :")
+
+    @Test(priority = 6)
+    public  void validateclickprofile(){
+            loginpage.verifyclickprofile();
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story Name: To Check LogoutFunc")
+    @Test(priority = 7)
+    public void validatelogout(){
+        loginpage.verifylogout();
+    }
 
 
     @AfterSuite
     public void teardown() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         driver.quit();
     }
 }

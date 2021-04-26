@@ -1,19 +1,22 @@
+
 package com.denovo.testscripts;
 
 import com.denovo.Base.TestBase;
 import com.denovo.Pages.HomePage;
 import com.denovo.Pages.LoginPage;
 import com.denovo.Pages.UserManagePage;
+import com.denovo.Util.DataProviderClass;
 import com.denovo.Util.TestUtil;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import org.testng.annotations.AfterSuite;
 
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class UserManagePageTest extends TestBase {
 
@@ -34,17 +37,16 @@ public class UserManagePageTest extends TestBase {
         testUtil=new TestUtil();
         loginpage = new LoginPage();
         userManagePage = new UserManagePage();
-              homePage = loginpage.verifylogin();
+              homePage = loginpage.verifylogin(pro.getProperty("username"),pro.getProperty("password"));
         userManagePage = homePage.clickonusermanagelink();
     }
 
     @Test(priority = 1)
     public void validateusermanagepageTitle(){
-        if(userManagePage.verifyusermanagepageTitle().equals("Denovo System")) {
+        if(userManagePage.verifyusermanagepageTitle().equals("Dejavoo System")) {
             logger.info("usermanagepage title Passed");
             Assert.assertTrue(true);
         }
-
         else
             {
             logger.info("usermanagepage title failed");
@@ -77,26 +79,35 @@ public class UserManagePageTest extends TestBase {
     }
 
 
-    @Test(priority = 6)
-    @Parameters({"fname"})
+
+    @Test(priority = 6,dataProvider = "getUserData")
+
     public void validatefirstname(String fname){
         userManagePage.verifyfirstname(fname);
     }
 
 
     @Test(priority = 7)
-    @Parameters({"lname"})
     public void validatelastname(String lname){
         userManagePage.verifylastname(lname);
     }
 
 
     @Test(priority = 8)
-    @Parameters({"email"})
     public void validateemail(String email){
         userManagePage.verifyemail(email);
     }
 
+
+    @DataProvider
+    public Iterator<Object[]> getUserData(){
+        ArrayList<Object[]>userdata= DataProviderClass.getdatafromexcel();
+        return userdata.iterator();
+    }
+
+  /*  public void validateUserData(String fname,String lname,String email,String phonenumber ){
+
+    }*/
 
     @Test(priority = 9)
     public void validateclickdropdown(){
@@ -110,8 +121,11 @@ public class UserManagePageTest extends TestBase {
         testUtil.dropdown();
     }
 
-    public void teardown(){
+    @AfterSuite
+    public void teardown() throws InterruptedException {
+        Thread.sleep(4000);
         driver.quit();
     }
-
 }
+
+

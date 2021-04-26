@@ -22,7 +22,17 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//input[@class='form-check-input']")
     WebElement Remembercheckbox;
 
+    @FindBy(xpath = "//input[@placeholder='Email']")
+    WebElement usernamefieldbox;
 
+    @FindBy(xpath = "//input[@placeholder='Password']")
+    WebElement passwordfielbox;
+
+    @FindBy(xpath = "//*[@alt='profile']")
+    WebElement logoutprofile;
+
+    @FindBy(xpath = "//span[contains(text(),'Log Out')]")
+    WebElement logout;
 
     //Initializing the page objects
     public LoginPage() {
@@ -55,9 +65,24 @@ public class LoginPage extends TestBase {
 
 
     @Step("login with username and password step...")
-    public HomePage verifylogin() {
+    public HomePage verifylogin(String username,String password) {
+        usernamefieldbox.clear();
+        usernamefieldbox.sendKeys(username);
+        passwordfielbox.clear();
+        passwordfielbox.sendKeys(password);
         loginBtn.click();
-        return new HomePage();
+
+       return new HomePage();
+    }
+        @Step("verifying ClikProfile....")
+        public void verifyclickprofile(){
+            logoutprofile.click();
+        }
+
+
+        @Step("verifying clicklogout....")
+        public void verifylogout(){
+            logout.click();
 
     }
 }

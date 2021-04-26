@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Denovo Web Application Test suite">
+    <test verbose="2" preserve-order="true" name="Regression Test">
+    <classes>
+        <class name="com.denovo.testscripts.LoginPageTest"></class>
+        <class name="com.denovo.testscripts.HomePageTest"></class>
+        <class name="com.denovo.testscripts.UserManagePageTest"></class>
+    </classes>
+
+    </test>
+</suite>
