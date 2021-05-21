@@ -3,6 +3,7 @@ package com.denovo.Util;
 import com.denovo.Base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -19,22 +20,38 @@ public class TestUtil extends TestBase {
 
 
 
-    public void dropdown() throws InterruptedException {
-        //WebElement dropdowncountry = driver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/div[2]/div/div/form/div[2]/div[1]/div/ngx-intl-tel-input/div/div/div"));
-
-     /*   WebElement dropdowncountry = driver.findElement(By.xpath("//div[@class='iti__selected-flag dropdown-toggle']"));
-        dropdowncountry.click();*/
-
-        List<WebElement> listofcountry=driver.findElements(By.xpath("//ul[@class='iti__country-list']/li"));
-
-
-        for(int i=0; i<listofcountry.size(); i++) {
-            System.out.println(listofcountry.get(i).getText());
-            if(listofcountry.get(i).getText().contains("India (भारत)")) {
-                listofcountry.get(i).click();
-                break;
+    public static void Selectcountrydropdown(String countryname)
+    {
+        try {
+            List<WebElement> listofcountry = driver.findElements(By.xpath("//ul[@class='iti__country-list']/li"));
+            for (int i = 0; i < listofcountry.size(); i++) {
+                //System.out.println(listofcountry.get(i).getText());
+                if (listofcountry.get(i).getText().contains(countryname)) {
+                    listofcountry.get(i).click();
+                    break;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
+
+    public static void SelectRoleDropdown(WebElement element,String Role){
+        Select select = new Select(element);
+        List<WebElement> listofOption = select.getOptions();
+        boolean flag= false;
+        for (WebElement option : listofOption)
+        {
+            String list = option.getText().trim();
+            if (list.equalsIgnoreCase(Role.trim()))
+            {
+                flag=true;
+                select.selectByVisibleText(list);
+            }
+        }
+        if(flag==false){
+            System.out.println("element not found");
+        }
+    }
 }

@@ -4,10 +4,7 @@ package com.denovo.testscripts;
 import com.denovo.Base.TestBase;
 import com.denovo.Pages.HomePage;
 import com.denovo.Pages.LoginPage;
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -19,7 +16,7 @@ public class HomePageTest extends TestBase {
         super();
     }
 
-    @BeforeSuite
+    @BeforeMethod
     public void setup() {
         initialization();
         loginPage = new LoginPage();
@@ -27,48 +24,87 @@ public class HomePageTest extends TestBase {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Description("Test Case Description: Verify Homepage title test on HomePage")
+    @Description("Test Case Description: Verify Homepage title Test ")
     @Story("story Name: To Check HomePage Title")
-
-
     @Test(priority = 1)
     public void validatehomepageTitle() {
-
-        if(homepage.verifyhomePageTitle().equals("Dejavoo System")) {
-            logger.info("Homepage title Passed");
-            Assert.assertTrue(true);
-        }
-        else {
-            logger.info("Homepage title failed");
-            Assert.assertTrue(false);
-        }
+        String title=homepage.verifyhomePageTitle();
+        System.out.print(title);
+        Assert.assertEquals(title,"Dejavoo System");
     }
 
     @Severity(SeverityLevel.NORMAL)
     @Description("Test Case Description: Verify Home page Logo test on Home Page")
-    @Story("story Name: To Check HomePage Title")
-
+    @Story("story Name: To Check HomePage Logo")
     @Test(priority = 2 )
     public void validatehomepagelogo() {
         boolean flag= homepage.verifylogo();
-        Assert.assertTrue(flag);
+        Assert.assertTrue(flag,"Dejavoo logo is not displayed");
     }
+
 
 
     @Severity(SeverityLevel.NORMAL)
-    @Description("Test Case Description: Verify Usermanagelink test on Home Page")
-    @Story("story Name: To Check HomePage Title")
-
-    @Test(priority = 4)
-    public void validateusermanagelink(){
-        homepage.clickonusermanagelink();
+    @Description("Test Case Description: Validate DashboardLink IsSelected test on Home Page")
+    @Story("story Name: To Check Dashboard link IsSelected")
+    @Test(priority = 3)
+    public void validateDashboardlinkIsSelected() {
+        String actualColor = homepage.verifyDashboardlinkIsHighlighted();
+        Assert.assertEquals(actualColor,"#e0f7fa","DashBoard Link is not Highlighted on DashBoard Page");
 
     }
 
-    @AfterSuite
-    public void teardown() throws InterruptedException {
-        Thread.sleep(3000);
+
+
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test Case Description: Verify Dashboard test on Home Page")
+    @Story("story Name: To Check Dashboard link IsSelected")
+    @Test(priority = 4)
+    public void validateDashboardlinkIsDisplayed() {
+        boolean flag = homepage.verifyDashboardIsDisplaed();
+        Assert.assertTrue(flag,"Dashboard Link is not Displayed");
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test Case Description: Verify UserManagement Link test on Home Page")
+    @Story("story Name: To Check  link UserManagement link IsDisplayed")
+    @Test(priority = 5)
+    public void validateusermanagelinkIsDisplayed(){
+        boolean flag=homepage.verifyUsermanagelinkIsdisplayed();
+        Assert.assertTrue(flag,"UserManagment Link is not displayed");
+
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test Case Description: Verify Customer Link test on Home Page")
+    @Story("story Name: To Check  link customer link IsDisplayed")
+    @Test(priority = 6)
+    public void validateCustomerlinkIsDisplayed(){
+        boolean flag=homepage.verifyCustomerIsDispalyed();
+        Assert.assertTrue(flag,"Customer link is not displayed");
+
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test Case Description: validate Steams Link test on Home Page")
+    @Story("story Name: To Check validate Steams Link IsDisplayed")
+    @Test(priority = 7)
+    public void validateSteamsLinkIsDisolayed(){
+        boolean flag=homepage.verifySteamsIsDisplayed();
+        Assert.assertTrue(flag,"Steam Link is not displayed");
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test Case Description: Validate Transactions Link test on Home Page")
+    @Story("story Name: To Check validate Transactions Link IsDisplayed")
+    @Test(priority = 8)
+    public void validateTransactionsLinkIsDisplayed(){
+        boolean flag=homepage.verifySteamsIsDisplayed();
+        Assert.assertTrue(flag,"Transactions Link is not displayed");
+    }
+
+    @AfterMethod
+    public void teardown(){
         driver.quit();
     }
-
 }

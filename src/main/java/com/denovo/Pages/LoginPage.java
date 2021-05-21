@@ -1,5 +1,4 @@
 package com.denovo.Pages;
-
 import com.denovo.Base.TestBase;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
@@ -22,10 +21,10 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//input[@class='form-check-input']")
     WebElement Remembercheckbox;
 
-    @FindBy(xpath = "//input[@placeholder='Email']")
+    @FindBy(xpath = "//input[@formcontrolname='email']")
     WebElement usernamefieldbox;
 
-    @FindBy(xpath = "//input[@placeholder='Password']")
+    @FindBy(xpath = "//input[@formcontrolname='password']")
     WebElement passwordfielbox;
 
     @FindBy(xpath = "//*[@alt='profile']")
@@ -39,19 +38,21 @@ public class LoginPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-
     //Actions
     @Step("Getting LoginPagetitle step...")
     public String verifyLoginPageTitle() {
-        logger.info("Title element is found");
         return driver.getTitle();
     }
 
     @Step("verifying Sign Up Link is displayed step...")
-    public boolean VerifyForgotlink(){
-        return forgotlink.isDisplayed();
+    public boolean verifyForgotlink(){
+       return isElementPresent(forgotlink,"Forgot Password?");
     }
 
+
+    public boolean isElementPresent(WebElement element,String value){
+        return element.isDisplayed() && element.getText().equalsIgnoreCase(value);
+    }
 
     @Step("verifying Denovologo isdisplayed step...")
     public boolean verifyDenovoLogo() {
