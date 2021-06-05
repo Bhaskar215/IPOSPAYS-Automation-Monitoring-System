@@ -5,10 +5,11 @@ import com.denovo.Util.Readerlib.Xls_Reader;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class DataProviderClass {
+
+    public static Xls_Reader reader;
 
     @DataProvider(name = "webLogin")
     public Object[][] credentials() throws IOException {
@@ -91,4 +92,28 @@ public class DataProviderClass {
         }
         return addcustomer;
     }
+
+
+    public static ArrayList<Object[]> getApplicationData() {
+
+        ArrayList<Object[]> addApplication = new ArrayList<>();
+        Xls_Reader reader = new Xls_Reader("E:\\IntelljWorkspaces\\src\\main\\java\\com\\denovo\\ExcelData\\SE_DataShett.xlsx");
+
+        int tolrow = reader.getRowCount("CreateApplication");
+
+
+        for (int rowNum = 2; rowNum <= tolrow; rowNum++) {
+
+            String Manufacturer = reader.getCellData("CreateApplication", "Manufacturer", rowNum);
+            String DeviceModel = reader.getCellData("CreateApplication", "DeviceModel", rowNum);
+            String ApplicationName = reader.getCellData("CreateApplication", "ApplicationName", rowNum);
+            String ApplicationSign = reader.getCellData("CreateApplication", "ApplicationSign", rowNum);
+
+            Object[] obj = {Manufacturer, DeviceModel, ApplicationName, ApplicationSign};
+            addApplication.add(obj);
+
+        }
+        return addApplication;
+    }
+
 }

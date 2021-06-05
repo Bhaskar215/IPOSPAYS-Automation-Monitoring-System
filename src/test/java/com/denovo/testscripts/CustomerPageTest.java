@@ -5,6 +5,7 @@ import com.denovo.Pages.CustomerPage;
 import com.denovo.Pages.HomePage;
 import com.denovo.Pages.LoginPage;
 import com.denovo.Util.DataProviderClass;
+import com.denovo.Util.Listener.RetryAnalyzer;
 import com.denovo.Util.TestUtil;
 import io.qameta.allure.*;
 import org.testng.Assert;
@@ -32,8 +33,7 @@ public class CustomerPageTest extends TestBase {
         loginPage =new LoginPage();
         homePage = new HomePage();
         customerPage=new CustomerPage();
-         homePage = loginPage.verifylogin(pro.getProperty("username"),pro.getProperty("password"));
-
+        homePage = loginPage.verifylogin(pro.getProperty("username"),pro.getProperty("password"));
          customerPage.verifyClickCustomerLink();
 
     }
@@ -85,7 +85,7 @@ public class CustomerPageTest extends TestBase {
     @Description("Test Case Description: validate UserManagePage Link")
     @Story("story Name: To Check validate logo")
     @Step("validate UserManagement Link   ")
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void validateUsermanagementLink(){
         boolean usermanagement=customerPage.verifyusermanagementlinkIsDisplayed();
         Assert.assertTrue(usermanagement);
@@ -95,7 +95,7 @@ public class CustomerPageTest extends TestBase {
     @Description("Test Case Description: validate UserManagePage Link")
     @Story("story Name: To Check validate UserManagePage Link ")
     @Step("validate CustomerLink Text ")
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void validateCustomerLink(){
         boolean CustomerLink=customerPage.verifycustomerlnkIsDisplayed();
         Assert.assertTrue(CustomerLink,"Customer Link isn't displayed");
@@ -105,7 +105,7 @@ public class CustomerPageTest extends TestBase {
     @Description("Test Case Description: validate STEAM Link")
     @Story("story Name: To Check validate STEAM link Is Displayed")
     @Step("validate STEAM Link   ")
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void validateSteamLink(){
         boolean SteamLink=customerPage.verifySteamlinkIsDisplayed();
         Assert.assertTrue(SteamLink,"STEAM link Isn't Displayed");
@@ -115,7 +115,7 @@ public class CustomerPageTest extends TestBase {
     @Description("Test Case Description: validate Add Customer btn is Enable")
     @Story("story Name: To Check validate Add Customer btn is Enable ")
     @Step("validate Customer btn is Enable")
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void validateAddcustomerBtnIsEnable(){
        boolean customerbtn=customerPage.verifyAddCustomerbtnIsEnable();
        Assert.assertTrue(customerbtn,"Add Customer btn isn't Enable ");
@@ -131,7 +131,7 @@ public class CustomerPageTest extends TestBase {
 
     @Step("DataProvider method help fetch data from excel")
     @DataProvider
-    public Iterator<Object[]> getcustomerdata(){
+    public Iterator<Object[]>getcustomerdata(){
         ArrayList<Object[]> customerdata=DataProviderClass.getCustomerData();
         return customerdata.iterator();
     }
@@ -141,7 +141,7 @@ public class CustomerPageTest extends TestBase {
     @Description("Test Case Description: validate UserManagePage Link")
     @Story("story Name: To Check validate customer data")
     @Step("validate customer data   ")
-    @Test(priority = 9, dataProvider = "getcustomerdata")
+    @Test(priority = 9, retryAnalyzer = RetryAnalyzer.class,dataProvider = "getcustomerdata")
     public void validateCustomerData(String dba,String fname,String lname,String Isoidentified,
                                      String Address1,String Address2,String Zipcode,String Email,String Processor,
                                     String PhoneNumber,String TechSupportphoneNumber,String HelpDeskPhone, String HelpDeskEmail,String TechSupportEmail) throws InterruptedException, AWTException {

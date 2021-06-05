@@ -113,8 +113,6 @@ public class CustomerPage extends TestBase {
     @FindBy(xpath = "//*[contains(text(),'You successfully created your customer')]")
     WebElement customerDataCreated;
 
-    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
-    WebElement randomclick;
 
     public CustomerPage(){
         PageFactory.initElements(TestBase.driver,this);
@@ -284,7 +282,6 @@ public class CustomerPage extends TestBase {
             n--;
         }
     }
-
 
     @Step("enter zipcode")
     public void verifyzipcode(WebElement element,String zip){

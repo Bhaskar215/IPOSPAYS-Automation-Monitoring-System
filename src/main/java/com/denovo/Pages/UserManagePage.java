@@ -1,14 +1,14 @@
 package com.denovo.Pages;
 
 import com.denovo.Base.TestBase;
+import com.denovo.Util.Listener.TestAllureListeners;
+import com.denovo.Util.TestUtil;
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
-import java.util.List;
 
 public class UserManagePage extends TestBase {
 
@@ -101,7 +101,10 @@ public class UserManagePage extends TestBase {
         String actual_hex = String.format("#%02x%02x%02x",Integer.parseInt(color_hex[0].trim()),
                 Integer.parseInt(color_hex[1].trim()), Integer.parseInt(color_hex[2].trim()));
 
+        //TestUtil.getFontcolor(userManagementFontcolor,color);
+
         return actual_hex;
+
     }
 
     @Step("verifying UserButton is Enable")
@@ -132,33 +135,13 @@ public class UserManagePage extends TestBase {
         emailaddress.sendKeys(email);
         phonenumber.clear();
         phonenumber.sendKeys(phone);
-
-        verifyRoleDropDown(Role);
+        TestUtil.SelectRoleDropdown(Roledropdown,Role);
+      //  verifyRoleDropDown(Role);
     }
 
     @Step("verifying ClickDropdown")
     public void verifyclickDropdown() {
         clickdropdown.click();
-    }
-
-    @Step("verifying RoleDropdown")
-    public void verifyRoleDropDown(String Role) {
-        Select select = new Select(Roledropdown);
-        List<WebElement> listofOption = select.getOptions();
-        boolean flag= false;
-        for (WebElement option : listofOption)
-        {
-            String list = option.getText().trim();
-            if (list.equalsIgnoreCase(Role.trim()))
-            {
-                flag=true;
-                select.selectByVisibleText(list);
-            }
-
-        }
-        if(flag==false){
-            System.out.println("element not found");
-        }
     }
 
     @Step("verifying submit button")
@@ -167,12 +150,14 @@ public class UserManagePage extends TestBase {
     }
 
     @Step("verifying data created")
+    @Attachment()
     public  void verifydatacreated(){
         try{
             String Datacreated =datacreated.getText();
-            Assert.assertEquals(Datacreated,"Data created successfully.","After SuccessFulTry, Data Created Pop up Message Not displayed");
+            Assert.assertEquals(Datacreated,"Data created successfully.","Data Created Pop up Message Not displayed");
         }catch (Exception e){
-            System.out.println("Data is Invalid or Email is already taken");
+          //  System.out.println("Data is Invalid or Email is already taken");
+            TestAllureListeners.savelogs("Data is Invalid or Email is already taken");
         }
     }
 

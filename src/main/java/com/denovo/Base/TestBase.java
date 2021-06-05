@@ -7,6 +7,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,6 +17,7 @@ import java.util.Properties;
 
 public class TestBase {
 
+    public static WebDriverWait wait;
     public static WebDriver driver;
     public static Logger logger;
 

@@ -96,6 +96,7 @@ public class UserManagePageTest extends TestBase {
         String actualColor =userManagePage.verifyuserManagementlinkIsHighlighted();
         Assert.assertEquals(actualColor,"#e0f7fa","userManagement Link is not Highlighted on userManagement Page");
 
+
     }
 
     @Step("Dataprovider method help fetch data from excel")
@@ -120,19 +121,9 @@ public class UserManagePageTest extends TestBase {
         testUtil.Selectcountrydropdown("India (भारत)");
 
         userManagePage.verifyuserData(fname, lname, email, phonenumber,Role);
-        validateRoledropdown(Role);
+
         validatesubmitbtn();
 
-    }
-
-    @Feature("validate RoleDropDown")
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Test Case Description: validateRole Dropdown  UserManagePage")
-    @Story("story Name: To Check validateRole Dropdown")
-    @Step("validateRole Dropdown")
-
-    public void validateRoledropdown(String Role) {
-        userManagePage.verifyRoleDropDown(Role);
     }
 
     @Feature("validate Submit Button")
@@ -150,7 +141,7 @@ public class UserManagePageTest extends TestBase {
         @AfterMethod
         public void teardown () {
           try {
-              Thread.sleep(4000);
+              Thread.sleep(3000);
               driver.quit();
           }catch (InterruptedException e){
           }
