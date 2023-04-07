@@ -1,0 +1,62 @@
+
+k	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ï´úÿÿÿÿ
+y
+java:S1488/"^Immediately return this expression instead of assigning it to the temporary variable "number".(Ï´ï¾üÿÿÿÿ
+e
+java:S1104"PMake path a static final constant or non-public and provide accessors if needed.(‡ÛÛ?
+j
+java:S1104"OMake fis a static final constant or non-public and provide accessors if needed.(í·²üûÿÿÿÿ
+n
+java:S1104"SMake fileOut a static final constant or non-public and provide accessors if needed.(ŸÊÛèûÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(×Æÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘Ô®ç
+M
+java:S1135#"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+m
+java:S3776>"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ˆ§½úÿÿÿÿ
+V	java:S125K"<This block of commented-out lines of code should be removed.(Öµşüÿÿÿÿ
+Q	java:S125["<This block of commented-out lines of code should be removed.(Ÿ¥‡“
+V	java:S125`"<This block of commented-out lines of code should be removed.(å¥”ÿÿÿÿÿ
+Q	java:S125b"<This block of commented-out lines of code should be removed.(Ÿœ©ô
+n
+java:S3252g"XUse static access with "org.apache.poi.ss.usermodel.DateUtil" for "isCellDateFormatted".(‚ğƒ
+J
+java:S1874g"4Remove this use of "HSSFDateUtil"; it is deprecated.(‚ğƒ
+f
+java:S3252l"PUse static access with "org.apache.poi.ss.usermodel.DateUtil" for "getJavaDate".(·ä÷ê
+J
+java:S1874l"4Remove this use of "HSSFDateUtil"; it is deprecated.(·ä÷ê
+V	java:S125p"<This block of commented-out lines of code should be removed.(‰Åêºıÿÿÿÿ
+P
+java:S2209u"5Change this instance-reference to a static reference.(Ù–ø‘şÿÿÿÿ
+W	java:S125¢"<This block of commented-out lines of code should be removed.(å¥”ÿÿÿÿÿ
+o
+java:S3252§"XUse static access with "org.apache.poi.ss.usermodel.DateUtil" for "isCellDateFormatted".(‚ğƒ
+K
+java:S1874§"4Remove this use of "HSSFDateUtil"; it is deprecated.(‚ğƒ
+g
+java:S3252¬"PUse static access with "org.apache.poi.ss.usermodel.DateUtil" for "getJavaDate".(·ä÷ê
+K
+java:S1874¬"4Remove this use of "HSSFDateUtil"; it is deprecated.(·ä÷ê
+W	java:S125°"<This block of commented-out lines of code should be removed.(‰Åêºıÿÿÿÿ
+Q
+java:S2209µ"5Change this instance-reference to a static reference.(Ù–ø‘şÿÿÿÿ
+W	java:S125Ò"<This block of commented-out lines of code should be removed.(Öµşüÿÿÿÿ
+R	java:S125ã"<This block of commented-out lines of code should be removed.(·ù¨¿
+W	java:S125÷"<This block of commented-out lines of code should be removed.(÷¦¶äşÿÿÿÿ
+W
+java:S1117»";Rename "fileOut" which hides the field declared at line 19.(Û´ğñûÿÿÿÿ
+W
+java:S1117Ï";Rename "fileOut" which hides the field declared at line 19.(Û´ğñûÿÿÿÿ
+W	java:S125Ş"<This block of commented-out lines of code should be removed.( şœòúÿÿÿÿ
+W	java:S125è"<This block of commented-out lines of code should be removed.(°—ƒüÿÿÿÿ
+W	java:S125ñ"<This block of commented-out lines of code should be removed.(Ó§úüÿÿÿÿ
+\
+java:S1854“"@Remove this useless assignment to local variable "createHelper".(ÑÉ®øüÿÿÿÿ
+W	java:S125’"<This block of commented-out lines of code should be removed.(°—ƒüÿÿÿÿ
+M
+java:S1481“"1Remove this unused "createHelper" local variable.(ÑÉ®øüÿÿÿÿ
+W	java:S125”"<This block of commented-out lines of code should be removed.(»¬ÌÓşÿÿÿÿ
+W
+java:S1126¯"AReplace this if-then-else statement by a single return statement.(Ùµ½T
+R	java:S125Ë"<This block of commented-out lines of code should be removed.(µ‹úç

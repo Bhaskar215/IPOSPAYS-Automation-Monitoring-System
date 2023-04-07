@@ -1,0 +1,200 @@
+{
+  "uid" : "c12b7b9e9b203da",
+  "name" : "loginTestWithBlankData",
+  "fullName" : "com.denovo.testscripts.LoginPageTest.loginTestWithBlankData",
+  "historyId" : "a01ab5a2d546c95ba9c32364532311ae",
+  "time" : {
+    "start" : 1628678229354,
+    "stop" : 1628678230496,
+    "duration" : 1142
+  },
+  "description" : "Test Description: Validate Error msg on EmailField and PasswordFile",
+  "descriptionHtml" : "<p>Test Description: Validate Error msg on EmailField and PasswordFile</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1628678214692,
+      "stop" : 1628678229342,
+      "duration" : 14650
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Test Description: Validate Error msg on EmailField and PasswordFile",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login Step with username: {0}, password :{1}",
+      "time" : {
+        "start" : 1628678229354,
+        "stop" : 1628678230496,
+        "duration" : 1142
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "login with username and password step...",
+        "time" : {
+          "start" : 1628678229354,
+          "stop" : 1628678229736,
+          "duration" : 382
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "username",
+          "value" : ""
+        }, {
+          "name" : "password",
+          "value" : ""
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Click Login Button ",
+        "time" : {
+          "start" : 1628678229736,
+          "stop" : 1628678229862,
+          "duration" : 126
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Getting EmailFieldErrorMsg ",
+        "time" : {
+          "start" : 1628678229862,
+          "stop" : 1628678230460,
+          "duration" : 598
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Getting PasswordFieldErrorMsg ",
+        "time" : {
+          "start" : 1628678230468,
+          "stop" : 1628678230496,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "410b5593799e060d",
+      "name" : "screenshots",
+      "source" : "410b5593799e060d.txt",
+      "type" : "img/png",
+      "size" : 4
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1628678230505,
+      "stop" : 1628678231228,
+      "duration" : 723
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.denovo.testscripts.LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.denovo.testscripts.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginTestWithBlankData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "DenovoWebPortal Application System Login Suite File"
+  }, {
+    "name" : "suite",
+    "value" : "Regression Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.denovo.testscripts.LoginPageTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2K98EE4"
+  }, {
+    "name" : "thread",
+    "value" : "20752@DESKTOP-2K98EE4.TestNG-tests-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story Name: To Check LoginPage func"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c12b7b9e9b203da.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,111 @@
+
+¢
+java:S1192"ŒDefine a constant instead of duplicating this literal "E:\\IntelljWorkspaces\\src\\main\\java\\com\\denovo\\ExcelData\\Params.xlsx" 9 times.(ºŸŒ*
+c
+java:S1192"HDefine a constant instead of duplicating this literal "Receipt" 8 times.(Ş¤ã–øÿÿÿÿ
+b
+java:S1192D"LDefine a constant instead of duplicating this literal "Transaction" 8 times.(¿ğŠ
+f
+java:S1192r"KDefine a constant instead of duplicating this literal "CustomFee" 12 times.(íœ„µüÿÿÿÿ
+`
+java:S1192w"JDefine a constant instead of duplicating this literal "Type(%,$)" 4 times.(ªÇÉ“
+`
+java:S1192Å"IDefine a constant instead of duplicating this literal "ValueAdd" 5 times.(ú¶Ìû
+j
+java:S1192"NDefine a constant instead of duplicating this literal "SurchargeFee" 13 times.(ºŠŠÒùÿÿÿÿ
+b
+java:S1192Ú"LDefine a constant instead of duplicating this literal "Integration" 5 times.(˜Âˆ
+`
+java:S1192'"JDefine a constant instead of duplicating this literal "TipTaxes" 13 times.(´Û®à
+f
+java:S1192["KDefine a constant instead of duplicating this literal "Settlement" 8 times.(áÑüäıÿÿÿÿ
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(õÌ¥Õøÿÿÿÿ
+‹
+java:S1319!"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¥×®Äüÿÿÿÿ
+†
+java:S1319?"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(öˆÃ
+†
+java:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(µ‡Ôï
+†
+java:S1319m"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¶Õ´ï
+‡
+java:S1319‰"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(í¥¹×
+Œ
+java:S1319§"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(øıÅøÿÿÿÿ
+‡
+java:S1319À"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(àİæû
+‡
+java:S1319Õ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÿ¨óÙ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ñ¥t
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÛœşÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÀèê
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÖÇìúÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İè«Óøÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äŒ÷Á
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡È¤r
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûé«îùÿÿÿÿ
+k	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÌ¥“ûÿÿÿÿ
+k	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œõ€†üÿÿÿÿ
+f	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şĞ¯£
+f	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òñ¹ 
+f	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­›Öª
+k	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í§¬ÿÿÿÿÿ
+f	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ÀÅ™
+k	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì¾›ûıÿÿÿÿ
+k	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¤”‹üÿÿÿÿ
+k	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÄÚèüÿÿÿÿ
+f	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÇóâ
+k	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åñ±‡ùÿÿÿÿ
+f	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á­¸ò
+f	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½‘˜ğ
+f	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï”‰®
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿Êıÿÿÿÿ
+k	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÄæ‡úÿÿÿÿ
+k	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Óüüÿÿÿÿ
+f	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹À“
+f	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôë´Ö
+k	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êâ±ûÿÿÿÿ
+e	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Èá 
+k	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ…Ô®úÿÿÿÿ
+f	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ’Ã¢
+f	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„‚Îƒ
+e	java:S117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ù¥
+f	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÕÃœ
+f	java:S117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÇÉ“
+k	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒËëáüÿÿÿÿ
+f	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¬Ü
+k	java:S117z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ³¤Âùÿÿÿÿ
+f	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º‡ş×
+k	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üß¯åÿÿÿÿÿ
+f	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÄàÇ
+f	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿä¤˜
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆõ‡îùÿÿÿÿ
+l	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ ÁÂùÿÿÿÿ
+g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á ì‹
+l	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ·•íşÿÿÿÿ
+g	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹›Á•
+l	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š÷İÖüÿÿÿÿ
+g	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¤¯¡
+l	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÃ´ùÿÿÿÿ
+g	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â•‘ş
+l	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÅüÿÿÿÿ
+g	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÅá¯
+f	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úµ¯@
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰€¸«
+g	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íë§è
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÛ¡ô
+l	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áï•·üÿÿÿÿ
+l	java:S117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú±¢çøÿÿÿÿ
+l	java:S117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÏÜôùÿÿÿÿ
+l	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¶èÛøÿÿÿÿ
+l	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘÷µñÿÿÿÿÿ
+g	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àĞÿ¥
+g	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º—£¤
+m
+java:S1104	"RMake reader a static final constant or non-public and provide accessors if needed.(×±õàşÿÿÿÿ
+G
+java:S1444	",Make this "public static reader" field final(×±õàşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊÎÀÅûÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(©ê“‹øÿÿÿÿ

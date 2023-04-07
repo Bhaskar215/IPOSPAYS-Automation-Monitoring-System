@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">DenovoWebPortal Suite File</th></tr>
+<tr><td><a href="#t0">RegressionTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">97,798</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DenovoWebPortal Suite File</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.denovo.testscripts.QuickPayWithSurchargeFeeTest</td><td><a href="#m0">ValidateQuickPayWithSurchargeFee</a></td><td rowspan="1">1680602996951</td><td rowspan="1">35806</td></tr><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.denovo.testscripts.QPayWithSendLinkCustomFeeTest</td><td><a href="#m1">ValidateCustomFeeAmtOnQPaySendLink</a></td><td rowspan="1">1680603003843</td><td rowspan="1">76790</td></tr></tbody>
+</table>
+<h2>RegressionTest</h2><h3 id="m0">com.denovo.testscripts.QuickPayWithSurchargeFeeTest#ValidateQuickPayWithSurchargeFee</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, Action=Quick Pay, Email=@cloud-mail.top, Tax=No, DisplayLabel=SurchargeFee, Exp Date=12/25, TPN=364222214920, Phone=, MerchantPrimaryPwd=Denovo@2021, MerchantPrimaryUser=warren@cloud-mail.top, typePercentageOrDollar=%, DiscloseFee=Yes, Expected FeeAmt=0.04, Capped At=4.99, ISOPrimaryEmail=bhaskarmurthy215@gmail.com, Fee=Enable, Amount=1.00, Transaction Type=Sale, Expected TotalAmt=1.04, SurchargeFeeTPN=364222214920, Payment Type=Pay now, Fee Type=Surcharge, Expected BaseAmt=1.00, Tip=No, Percentage Of Tx Amount=100, Card Number=4242424242424242, ISOPrimaryPwd=Denovo@2021}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException:
+    Expected condition failed: waiting for visibility of element located by By.xpath: //h5[@class=&apos;mt-2 mb-1
+    text-center&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+    at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+    at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+    at com.denovo.factories.ExplicitWaitFactory.performExplicityWait(ExplicitWaitFactory.java:25)
+    at
+    com.denovo.Pages.QuickPayWithPayNowCustomFeePage.fillQuickSaleWithSurchargeFeeParamInfo(QuickPayWithSurchargeFeePage.java:215)
+    at
+    com.denovo.Pages.QuickPayWithPayNowCustomFeePage.verifyQuickPayWithSurchargeFeeFormIsoLogin(QuickPayWithSurchargeFeePage.java:266)
+    at
+    com.denovo.testscripts.QuickPayWithSurchargeFeeTest.ValidateQuickPayWithSurchargeFee(QuickPayWithSurchargeFeeTest.java:26)
+    at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+    at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+    at java.base/java.lang.Thread.run(Thread.java:832)
+    Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h5[@class=&apos;mt-2
+    mb-1 text-center&apos;]&quot;}
+    (Session info: chrome=111.0.5563.147)
+    For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+    Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+    System info: host: &apos;DESKTOP-2K98EE4&apos;, ip: &apos;192.168.0.127&apos;, os.name: &apos;Windows 10&apos;,
+    os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome:
+    {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MYPC~1\AppData\Loc...},
+    goog:chromeOptions: {debuggerAddress: localhost:63468}, javascriptEnabled: true, networkConnectionEnabled: false,
+    pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true,
+    strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior:
+    dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+    Session ID: 1e168049f9088c5c6bf53654367ded0d
+    *** Element info: {Using=xpath, value=//h5[@class=&apos;mt-2 mb-1 text-center&apos;]}
+    at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+    at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+    at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+    at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+    at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+    at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+    at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+    ... 19 more
+    ... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.denovo.testscripts.QPayWithSendLinkCustomFeeTest#ValidateCustomFeeAmtOnQPaySendLink</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=Description, Tax=No, DisplayLabel=CustomFee, CustomFee TPN=364222214920 , TPN=364222214920 , Phone=, ValueAdd=Disable, MerchantPrimaryPwd=Denovo@2021, MerchantPrimaryUser=warren@cloud-mail.top, typePercentageOrDollar=%, DiscloseFee=Yes, Expected FeeAmt=0.10, Capped At=4.99, ISOPrimaryEmail=bhaskarmurthy215@gmail.com, Fee=Enable, Amount=2.00, Expiration=12/24, Transaction Type=Sale, Disclaimer=Disclaimer, Expected TotalAmt=2.10, Payment Type=Sendlink, Expire=OneWeek, References=references12, Fee Type=CustomFee, Expected BaseAmt=2.00, Tip=No, Percentage Of Tx Amount=100, ISOPrimaryPwd=Denovo@2021}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,308 @@
+{
+  "uid" : "fdfe366300ab8a38",
+  "name" : "validateUserData",
+  "fullName" : "com.denovo.testscripts.UserManagePageTest.validateUserData",
+  "historyId" : "a6619befa8c3aa5ce3a56e67591f29d9",
+  "time" : {
+    "start" : 1628678210644,
+    "stop" : 1628678213973,
+    "duration" : 3329
+  },
+  "description" : "Test Case Description: validate Adding UserData on UserManagePage",
+  "descriptionHtml" : "<p>Test Case Description: validate Adding UserData on UserManagePage</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1628678197754,
+      "stop" : 1628678210631,
+      "duration" : 12877
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login with username and password step...",
+      "time" : {
+        "start" : 1628678208263,
+        "stop" : 1628678208670,
+        "duration" : 407
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "bmurthy@denovosystem.com"
+      }, {
+        "name" : "password",
+        "value" : "Denovo@2021"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verifying UserManagement Link",
+      "time" : {
+        "start" : 1628678208670,
+        "stop" : 1628678210631,
+        "duration" : 1961
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Test Case Description: validate Adding UserData on UserManagePage",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Fetching the data From Excel  ",
+      "time" : {
+        "start" : 1628678210644,
+        "stop" : 1628678213973,
+        "duration" : 3329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "verifying UserButton",
+        "time" : {
+          "start" : 1628678210644,
+          "stop" : 1628678212415,
+          "duration" : 1771
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "verifying ClickDropdown",
+        "time" : {
+          "start" : 1628678212415,
+          "stop" : 1628678212683,
+          "duration" : 268
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "fetching data from excel Firstname:TestData Lastname:TestLastName Email: userdat004@gmail.com Phone : 9.17697843E8",
+        "time" : {
+          "start" : 1628678212963,
+          "stop" : 1628678213872,
+          "duration" : 909
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "fname",
+          "value" : "TestData"
+        }, {
+          "name" : "lname",
+          "value" : "TestLastName"
+        }, {
+          "name" : "email",
+          "value" : "userdat004@gmail.com"
+        }, {
+          "name" : "phone",
+          "value" : "9.17697843E8"
+        }, {
+          "name" : "Role",
+          "value" : "System - Admin  "
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "validate Submit Button",
+        "time" : {
+          "start" : 1628678213872,
+          "stop" : 1628678213973,
+          "duration" : 101
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "verifying submit button",
+          "time" : {
+            "start" : 1628678213872,
+            "stop" : 1628678213973,
+            "duration" : 101
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "verifying data created",
+            "time" : {
+              "start" : 1628678213947,
+              "stop" : 1628678213973,
+              "duration" : 26
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "29e27726a6d0f156",
+              "name" : "stacktrace",
+              "source" : "29e27726a6d0f156.txt",
+              "type" : "text/plain",
+              "size" : 41
+            } ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 1
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 1
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "fname",
+        "value" : "TestData"
+      }, {
+        "name" : "lname",
+        "value" : "TestLastName"
+      }, {
+        "name" : "email",
+        "value" : "userdat004@gmail.com"
+      }, {
+        "name" : "phonenumber",
+        "value" : "9.17697843E8"
+      }, {
+        "name" : "Role",
+        "value" : "System - Admin  "
+      } ],
+      "stepsCount" : 6,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1628678213973,
+      "stop" : 1628678214692,
+      "duration" : 719
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.denovo.testscripts.UserManagePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.denovo.testscripts.UserManagePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateUserData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "DenovoWebPortal Application System Login Suite File"
+  }, {
+    "name" : "suite",
+    "value" : "Regression Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.denovo.testscripts.UserManagePageTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2K98EE4"
+  }, {
+    "name" : "thread",
+    "value" : "20752@DESKTOP-2K98EE4.TestNG-tests-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "validate UserData"
+  }, {
+    "name" : "story",
+    "value" : "story Name: To Check validate Adding UserData"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "TestData"
+  }, {
+    "name" : "arg1",
+    "value" : "TestLastName"
+  }, {
+    "name" : "arg2",
+    "value" : "userdat004@gmail.com"
+  }, {
+    "name" : "arg3",
+    "value" : "9.17697843E8"
+  }, {
+    "name" : "arg4",
+    "value" : "System - Admin  "
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fdfe366300ab8a38.json",
+  "parameterValues" : [ "TestData", "TestLastName", "userdat004@gmail.com", "9.17697843E8", "System - Admin  " ]
+}

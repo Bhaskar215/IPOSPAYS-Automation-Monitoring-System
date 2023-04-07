@@ -1,0 +1,31 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ›ëÓ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€öıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€öıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€öıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€öıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€öıÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÔÕ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÔÕ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÔÕ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ì—Å¾øÿÿÿÿ
+|
+java:S4165&"fRemove this useless assignment; "lastName" already holds the assigned value along all execution paths.(õöğä
+w
+java:S4165'"aRemove this useless assignment; "iso" already holds the assigned value along all execution paths.(õöñ
+
+java:S4165("fRemove this useless assignment; "address1" already holds the assigned value along all execution paths.(®èï¾ıÿÿÿÿ
+~
+java:S4165,"cRemove this useless assignment; "email" already holds the assigned value along all execution paths.(Ü‡³Ôúÿÿÿÿ
+{
+java:S4165+"eRemove this useless assignment; "zipcode" already holds the assigned value along all execution paths.(úª×›
+
+java:S4165)"fRemove this useless assignment; "address2" already holds the assigned value along all execution paths.(€©¥İøÿÿÿÿ
+W	java:S107"BConstructor has 14 parameters, which is greater than 7 authorized.(Ñ›ëÓ
+]
+java:S1128"HRemove this unused import 'org.apache.poi.ss.formula.functions.Address'.(”ü¬e

@@ -1,0 +1,226 @@
+
+]
+java:S1192U"GDefine a constant instead of duplicating this literal "Email" 13 times.(ÎÀÏ
+i
+java:S1192ğ"RDefine a constant instead of duplicating this literal "Application Sign" 14 times.(·ÁÑ¿
+c
+java:S1192J"MDefine a constant instead of duplicating this literal "AddCustomer" 18 times.(İ¤Äô
+d
+java:S1192Ÿ"MDefine a constant instead of duplicating this literal "SaveCustomer" 8 times.(âùİ´
+{
+java:S1192İ"_Define a constant instead of duplicating this literal "Agent(A)AddMerchantWithoutFee" 28 times.(Å«Îšûÿÿÿÿ
+j
+java:S1192ñ"NDefine a constant instead of duplicating this literal "Routing Type" 14 times.(©¹Ó›şÿÿÿÿ
+{
+java:S1192î"_Define a constant instead of duplicating this literal "Agent(P)AddMerchantWithoutFee" 28 times.(ÌŒÌ‘ùÿÿÿÿ
+h
+java:S1192v"RDefine a constant instead of duplicating this literal "CreateApplication" 5 times.(ª®Ñà
+j
+java:S1192ï"NDefine a constant instead of duplicating this literal "Device Model" 14 times.(´ŒÏïøÿÿÿÿ
+b
+java:S1192‚"KDefine a constant instead of duplicating this literal "Store Name" 4 times.(ÀÄ£…
+i
+java:S1192{"NDefine a constant instead of duplicating this literal "Manufacturer" 15 times.(í¦ƒšşÿÿÿÿ
+l
+java:S1192÷"PDefine a constant instead of duplicating this literal "Select Profile" 14 times.(¨ÕÇ‡üÿÿÿÿ
+g
+java:S1192İ"PDefine a constant instead of duplicating this literal "iSOPrimaryEmail" 4 times.(ìú˜ü
+s
+java:S1192Ç"WDefine a constant instead of duplicating this literal "ISO(A)AddStoreWithTpn" 27 times.(ÛÍåóşÿÿÿÿ
+s
+java:S1192“"WDefine a constant instead of duplicating this literal "ISO(P)AddStoreWithTpn" 27 times.(“ÑÑáüÿÿÿÿ
+}
+java:S1192ş"aDefine a constant instead of duplicating this literal "ISO(Addon)AddMerchantWithoutFee" 28 times.(šŠ—ÿÿÿÿÿ
+^
+java:S1192ù"GDefine a constant instead of duplicating this literal "Agent" 14 times.(ğ®àŸ
+a
+java:S1192ì"JDefine a constant instead of duplicating this literal "StoreName" 8 times.(èé›¿
+\
+java:S1192"FDefine a constant instead of duplicating this literal "Login" 3 times.( Çş°
+j
+java:S1192û"NDefine a constant instead of duplicating this literal "ISO(P)AddTpn" 19 times.(ƒğÎ¹ÿÿÿÿÿ
+^
+java:S11920"HDefine a constant instead of duplicating this literal "AddUser" 5 times.(Ê¤ã
+w
+java:S1192"`Define a constant instead of duplicating this literal "ISO(Primary)MerchantWithoutFee" 28 times.(‡•¯í
+m
+java:S1192ù"VDefine a constant instead of duplicating this literal "AgentOffice(A)AddTpn" 18 times.(·»™
+h
+java:S1192¨"LDefine a constant instead of duplicating this literal "Quick Sale" 11 times.(îÁöÆşÿÿÿÿ
+©
+java:S1192"“Define a constant instead of duplicating this literal "E:\\IntelljWorkspaces\\src\\main\\java\\com\\denovo\\ExcelData\\SE_DataSheet.xlsx" 19 times.(ÇìŒL
+e
+java:S11925"JDefine a constant instead of duplicating this literal "LastName" 13 times.(Ú¯“şÿÿÿÿ
+_
+java:S1192ı"HDefine a constant instead of duplicating this literal "TermID" 14 times.(œØ¤í
+c
+java:S1192ú"GDefine a constant instead of duplicating this literal "Chain" 14 times.(ÿ€â¤ùÿÿÿÿ
+^
+java:S1192û"HDefine a constant instead of duplicating this literal " Store" 14 times.(»æõq
+f
+java:S1192W"KDefine a constant instead of duplicating this literal "Processor" 15 times.(­¯ñÖøÿÿÿÿ
+e
+java:S1192š"NDefine a constant instead of duplicating this literal "Merchant Name" 6 times.(ŞíÚÒ
+s
+java:S1192·"\Define a constant instead of duplicating this literal "Agent(P)AddMerchantWithFee" 28 times.(¾»È˜
+w
+java:S1192É"[Define a constant instead of duplicating this literal "ISO(Addon)MerchantWithFee" 28 times.(Šâîÿÿÿÿÿ
+j
+java:S1192£"NDefine a constant instead of duplicating this literal "ISO(A)AddTpn" 19 times.(¨ÀßØüÿÿÿÿ
+]
+java:S11926"GDefine a constant instead of duplicating this literal "Phone" 13 times.(İ… Ò
+s
+java:S1192§"\Define a constant instead of duplicating this literal "Agent(A)AddMerchantWithFee" 28 times.(Œæ©
+¦
+java:S1192¦"Define a constant instead of duplicating this literal "E:\\IntelljWorkspaces\\src\\main\\java\\com\\denovo\\ExcelData\\CloudPos.xlsx" 3 times.(Ø­ñÕ
+s
+java:S1192Ä"\Define a constant instead of duplicating this literal "ISO(Primary)MerchantWithFee" 5 times.(€åÒÔ
+`
+java:S1192"IDefine a constant instead of duplicating this literal "AddAsset" 4 times.(´ßöí
+`
+java:S1192æ"IDefine a constant instead of duplicating this literal "ZipCode" 11 times.(€Œ©¸
+a
+java:S11924"KDefine a constant instead of duplicating this literal "FirstName" 13 times.(æÃÃ
+e
+java:S1192S"JDefine a constant instead of duplicating this literal "Address2" 11 times.(ÓÇíêÿÿÿÿÿ
+e
+java:S1192R"JDefine a constant instead of duplicating this literal "Address1" 11 times.(íŞ÷Ïüÿÿÿÿ
+y
+java:S1192Ø"]Define a constant instead of duplicating this literal "iso(Primary)MerchantWithFee" 26 times.(Ûä‹ûüÿÿÿÿ
+k
+java:S1192ó"ODefine a constant instead of duplicating this literal "Default Label" 14 times.(×‰–Ÿúÿÿÿÿ
+r
+java:S1192Ì"VDefine a constant instead of duplicating this literal "AgentOffice(P)AddTpn" 20 times.(ïğÅùÿÿÿÿ
+_
+java:S1192ü"HDefine a constant instead of duplicating this literal "TermNo" 14 times.(æŞà—
+j
+java:S1192Ş"NDefine a constant instead of duplicating this literal "iSOPrimaryPwd" 4 times.(Ÿ¹˜şÿÿÿÿ
+‹
+java:S1319)"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(šì¬®ÿÿÿÿÿ
+†
+java:S1319D"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(×æü„
+†
+java:S1319q"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Îø¸
+Œ
+java:S1319‡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÚÙñùÿÿÿÿ
+‡
+java:S1319£"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(µøÜş
+Œ
+java:S1319Ò"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(…ƒ³ıÿÿÿÿ
+Œ
+java:S1319‰"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Å³¬»üÿÿÿÿ
+‡
+java:S1319Ã"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é»Ÿ”
+Œ
+java:S1319ø"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–ë‰Öüÿÿÿÿ
+‡
+java:S1319±"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÆÔ“
+Œ
+java:S1319è"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‘ì”Şıÿÿÿÿ
+‡
+java:S1319¡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".( Øò
+‡
+java:S1319×"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(³ñĞü
+‡
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Áš­¸
+Œ
+java:S1319Á"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ö·ÔÃúÿÿÿÿ
+‡
+java:S1319õ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÕªšÍ
+‡
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¼È‹„
+‡
+java:S1319Æ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(™Æçı
+Œ
+java:S1319ï"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(î‡›ëøÿÿÿÿ
+‡
+java:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Üêğ¹
+f	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÃÃ
+k	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¯“şÿÿÿÿ
+f	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ… Ò
+k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù´öåıÿÿÿÿ
+k	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í÷ş¹úÿÿÿÿ
+f	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ü‹É
+k	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ç¿½ÿÿÿÿÿ
+k	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º–áÑøÿÿÿÿ
+k	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íŞ÷Ïüÿÿÿÿ
+k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÇíêÿÿÿÿÿ
+k	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÌÈûÿÿÿÿ
+f	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÀÏ
+k	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¯ñÖøÿÿÿÿ
+e	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıŞòB
+k	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌèÔ©øÿÿÿÿ
+k	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µà¤ıÿÿÿÿ
+k	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü»ÒÕıÿÿÿÿ
+f	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šüõ´
+k	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶É„Ãÿÿÿÿÿ
+e	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ûÍ"
+f	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯»õ
+k	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¦ƒšşÿÿÿÿ
+f	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞêĞ‚
+k	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÍ»×ùÿÿÿÿ
+k	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÂÏ¨üÿÿÿÿ
+l	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Ïß«úÿÿÿÿ
+g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÈ‰„
+l	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı²ù•ùÿÿÿÿ
+l	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ê‹üÿÿÿÿ
+l	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øĞüßøÿÿÿÿ
+g	java:S117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õõø˜
+g	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È÷¿²
+g	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‰±‘
+l	java:S117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÿ…£ÿÿÿÿÿ
+l	java:S117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡…Ûºúÿÿÿÿ
+l	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸäÏñıÿÿÿÿ
+g	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÈî
+g	java:S117ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èé›¿
+g	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ÈÛ½
+l	java:S117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õİ«ùÿÿÿÿ
+g	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä÷æŠ
+l	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™–ÿŞûÿÿÿÿ
+g	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•‚Ã
+l	java:S117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öƒœ²ûÿÿÿÿ
+l	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨œíÿÿÿÿÿ
+g	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞíÚÒ
+g	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³â“à
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÕÃ·
+g	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÄ£…
+g	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì¢¯ù
+l	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘šñ«üÿÿÿÿ
+g	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¿ĞŒ
+g	java:S117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ëİ¥
+g	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄŠŞ
+l	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëäü·úÿÿÿÿ
+m
+java:S1104"RMake reader a static final constant or non-public and provide accessors if needed.(×±õàşÿÿÿÿ
+G
+java:S1444",Make this "public static reader" field final(×±õàşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊÎÀÅûÿÿÿÿ
+i
+java:S2095·"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¾¡½ßÿÿÿÿÿ
+f
+java:S2095¸"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(¼Ö‰»üÿÿÿÿ
+A
+java:S1197",Move the array designators [][] to the type.(µ¬ê
+E
+java:S1197<"*Move the array designators [] to the type.(ÿ÷”Éùÿÿÿÿ
+Q	java:S1259"<This block of commented-out lines of code should be removed.(Ëî´ø
+@
+java:S1197f"*Move the array designators [] to the type.( Œ ¢
+A
+java:S1197›"*Move the array designators [] to the type.(Æ‚§¢
+R	java:S125—"<This block of commented-out lines of code should be removed.(Ëî´ø
+H
+java:S1197Ç",Move the array designators [][] to the type.(‚úÌ…ùÿÿÿÿ
+i	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å³¬»üÿÿÿÿ
+i	java:S100ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ë‰Öüÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áš­¸
+i	java:S100Á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö·ÔÃúÿÿÿÿ
+O	java:S106É"9Replace this use of System.out or System.err by a logger.(µˆœÑ
+\
+java:S1128"ARemove this unused import 'org.apache.poi.ss.usermodel.Workbook'.(°ûâìÿÿÿÿÿ
+W
+java:S1128	"<Remove this unused import 'org.testng.annotations.Optional'.(ÑÙ’±ùÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›

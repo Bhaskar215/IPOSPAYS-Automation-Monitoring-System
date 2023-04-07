@@ -1,0 +1,12 @@
+package com.denovo.enums;
+
+public enum ConfigProperties {
+
+    DEVURL,
+    OVERRIDEREPORTS,
+    PASSEDSTEPSSCREENSHOTS,
+    FAILEDSTEPSSCREENSHOTS,
+    SKIPPEDSTEPSSCREENSHOTS,
+    BROWSER
+
+}

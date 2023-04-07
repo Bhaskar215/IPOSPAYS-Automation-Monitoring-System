@@ -1,0 +1,179 @@
+{
+  "uid" : "5d302503c7fed95",
+  "name" : "validateCustomerPageTitle",
+  "fullName" : "com.denovo.testscripts.CustomerPageTest.validateCustomerPageTitle",
+  "historyId" : "3198ec6d00632430b2d2fb5b8757faa9",
+  "time" : {
+    "start" : 1628676100899,
+    "stop" : 1628676100913,
+    "duration" : 14
+  },
+  "description" : "Test Case Description: Verify UserManagement page title",
+  "descriptionHtml" : "<p>Test Case Description: Verify UserManagement page title</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1628676087313,
+      "stop" : 1628676100886,
+      "duration" : 13573
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login with username and password step...",
+      "time" : {
+        "start" : 1628676098176,
+        "stop" : 1628676098616,
+        "duration" : 440
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "bmurthy@denovosystem.com"
+      }, {
+        "name" : "password",
+        "value" : "Denovo@2021"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verifying customerPage Click CustomerLink ",
+      "time" : {
+        "start" : 1628676098617,
+        "stop" : 1628676100886,
+        "duration" : 2269
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Test Case Description: Verify UserManagement page title",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "validate LoginPage Title",
+      "time" : {
+        "start" : 1628676100900,
+        "stop" : 1628676100913,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "verifying CustomerPage Title",
+        "time" : {
+          "start" : 1628676100901,
+          "stop" : 1628676100913,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1628676100917,
+      "stop" : 1628676101613,
+      "duration" : 696
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.denovo.testscripts.CustomerPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.denovo.testscripts.CustomerPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateCustomerPageTitle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "DenovoWebPortal Application System Login Suite File"
+  }, {
+    "name" : "suite",
+    "value" : "Regression Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.denovo.testscripts.CustomerPageTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2K98EE4"
+  }, {
+    "name" : "thread",
+    "value" : "23200@DESKTOP-2K98EE4.TestNG-tests-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story Name: To Check UserManagePage Title"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5d302503c7fed95.json",
+  "parameterValues" : [ ]
+}

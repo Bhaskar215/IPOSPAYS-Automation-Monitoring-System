@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ì—Å¾øÿÿÿÿ
+f	java:S116"RRename this field "Country" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š„’9
+j	java:S116,"URename this field "Expiration" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¢íš
+h
+java:S1845¨"RRename method "setTpn" to prevent any misunderstanding/clash with method "settpn".(œÕí
+m
+java:S4144¨"WUpdate this method so that its implementation is not identical to "settpn" on line 244.(œÕí
+\	java:S107."BConstructor has 32 parameters, which is greater than 7 authorized.(µÓÝËùÿÿÿÿ

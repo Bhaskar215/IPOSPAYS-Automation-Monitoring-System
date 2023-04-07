@@ -1,0 +1,193 @@
+{
+  "uid" : "eb8969b81ee3fc25",
+  "name" : "validateCardHeaderWithBlueGreyTheme",
+  "fullName" : "com.denovo.testscripts.SteamApplicationTest.validateCardHeaderWithBlueGreyTheme",
+  "historyId" : "c98a7d6e8299dc39d8b649085c2c1b92",
+  "time" : {
+    "start" : 1628676327882,
+    "stop" : 1628676349290,
+    "duration" : 21408
+  },
+  "description" : "Test Case Description: Validate blueGreyTheme  test on Application",
+  "descriptionHtml" : "<p>Test Case Description: Validate blueGreyTheme  test on Application</p>\n",
+  "status" : "failed",
+  "statusMessage" : "As Per Expected CardHeader Should be blueGrey color when User change Bluegrey theme expected [#b0bec5] but found [#80deea]",
+  "statusTrace" : "java.lang.AssertionError: As Per Expected CardHeader Should be blueGrey color when User change Bluegrey theme expected [#b0bec5] but found [#80deea]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:575)\r\n\tat com.denovo.testscripts.SteamApplicationTest.validateCardHeaderWithBlueGreyTheme(SteamApplicationTest.java:90)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:770)\r\n\tat org.testng.TestRunner.run(TestRunner.java:591)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:402)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:41)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)\r\n\tat java.base/java.lang.Thread.run(Thread.java:832)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1628676310545,
+      "stop" : 1628676327879,
+      "duration" : 17334
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login with username and password step...",
+      "time" : {
+        "start" : 1628676325032,
+        "stop" : 1628676325397,
+        "duration" : 365
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "bmurthy@denovosystem.com"
+      }, {
+        "name" : "password",
+        "value" : "Denovo@2021"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Steam link navigate to correct page",
+      "time" : {
+        "start" : 1628676325397,
+        "stop" : 1628676327713,
+        "duration" : 2316
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify Click SteamApplication",
+      "time" : {
+        "start" : 1628676327713,
+        "stop" : 1628676327879,
+        "duration" : 166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Test Case Description: Validate blueGreyTheme  test on Application",
+    "status" : "failed",
+    "statusMessage" : "As Per Expected CardHeader Should be blueGrey color when User change Bluegrey theme expected [#b0bec5] but found [#80deea]",
+    "statusTrace" : "java.lang.AssertionError: As Per Expected CardHeader Should be blueGrey color when User change Bluegrey theme expected [#b0bec5] but found [#80deea]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:575)\r\n\tat com.denovo.testscripts.SteamApplicationTest.validateCardHeaderWithBlueGreyTheme(SteamApplicationTest.java:90)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:770)\r\n\tat org.testng.TestRunner.run(TestRunner.java:591)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:402)\r\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:41)\r\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)\r\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)\r\n\tat java.base/java.lang.Thread.run(Thread.java:832)\r\n",
+    "steps" : [ {
+      "name" : "Check blue grey theme bG color",
+      "time" : {
+        "start" : 1628676327883,
+        "stop" : 1628676348777,
+        "duration" : 20894
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3ef26dfd2dee6350",
+      "name" : "screenshots",
+      "source" : "3ef26dfd2dee6350.png",
+      "type" : "img/png",
+      "size" : 95586
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "teardown",
+    "time" : {
+      "start" : 1628676349823,
+      "stop" : 1628676353952,
+      "duration" : 4129
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.denovo.testscripts.SteamApplicationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.denovo.testscripts.SteamApplicationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateCardHeaderWithBlueGreyTheme"
+  }, {
+    "name" : "parentSuite",
+    "value" : "DenovoWebPortal Application System Login Suite File"
+  }, {
+    "name" : "suite",
+    "value" : "Regression Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.denovo.testscripts.SteamApplicationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2K98EE4"
+  }, {
+    "name" : "thread",
+    "value" : "23200@DESKTOP-2K98EE4.TestNG-tests-1(18)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story Name: To Check Application CardHeader with blueGrey Theme "
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "eb8969b81ee3fc25.json",
+  "parameterValues" : [ ]
+}
