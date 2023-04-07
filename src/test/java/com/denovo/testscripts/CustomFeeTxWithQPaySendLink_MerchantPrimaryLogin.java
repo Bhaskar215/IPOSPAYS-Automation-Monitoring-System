@@ -12,7 +12,6 @@ import org.assertj.core.api.Assertions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.util.Map;
@@ -65,8 +64,6 @@ public class CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin extends BaseTest  
                 .searchReferenceNumber()
                 .verifyInvoiceStatusAfterTx()
                 .verifyInvoiceTotalAmtAfterTx(data);
-
-
     }
 
     @DataProvider

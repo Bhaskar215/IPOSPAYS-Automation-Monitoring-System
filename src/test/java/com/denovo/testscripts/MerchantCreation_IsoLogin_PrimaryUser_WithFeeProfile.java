@@ -33,7 +33,7 @@ public class MerchantCreation_IsoLogin_PrimaryUser_WithFeeProfile extends BaseTe
     public  Object[][] getData() throws IOException {
         Object[][] arrObject=null;
         arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/SE_DataSheet.xlsx",
-                "iso(Primary)MerchantWithFee");
+                "Iso(Primary)MerchantWithFee");
         return arrObject;
     }
 }

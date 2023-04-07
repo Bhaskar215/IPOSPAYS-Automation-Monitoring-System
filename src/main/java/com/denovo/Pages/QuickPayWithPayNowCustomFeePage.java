@@ -1,6 +1,7 @@
 package com.denovo.Pages;
 
 import com.denovo.Driver.DriverManager;
+import com.denovo.Reports.ExtentLogger;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
@@ -8,6 +9,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
+import java.lang.reflect.Method;
 import java.util.Map;
 
 public class QuickPayWithPayNowCustomFeePage extends BasePage {
@@ -133,9 +135,16 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
     }
 
     public void verifySearchTpn(String tpn) throws InterruptedException {
-        sendKeys(searchTpn,tpn,WaitStrategy.PRESENCE);
-        Thread.sleep(3000);
-        DriverManager.getDriver().findElement(searchTpn).sendKeys(Keys.ENTER);
+        try{
+            if(!tpn.isEmpty()) {
+                sendKeys(searchTpn, tpn, WaitStrategy.PRESENCE);
+                Thread.sleep(3000);
+                DriverManager.getDriver().findElement(searchTpn).sendKeys(Keys.ENTER);
+            }
+        }catch(Exception e){
+            ExtentLogger.fail("TPN NOT FOUND,Check Your Excel or PageClass ");
+        }
+
     }
 
     public void verifySearchCloudPosTpn(String CloudPostpn) throws InterruptedException {
@@ -165,7 +174,7 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
         verifyClickSteamLink();
         verifyClickEditParamLink();
 
-        verifySearchTpn(data.get("CustomFee TPN"));
+        verifySearchTpn(data.get("CustomFeeTPN"));
 
         verifyClickEditParamButton();
 
@@ -227,7 +236,7 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
 
         click(clickPayments,WaitStrategy.CLICKABLE);
 
-        verifySearchCloudPosTpn(data.get("CustomFee TPN"));
+        verifySearchCloudPosTpn(data.get("CustomFeeTPN"));
 
         sendKeys(amtField,data.get("Amount"),WaitStrategy.VISIABLE);
 

@@ -1,0 +1,1410 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ipospays Automation Reports</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Regression</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 7, 2023 08:43:08 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">BhaskarMurthy</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile</p>
+            <p class="text-sm">
+              <span>8:43:26 pm</span> / <span>00:01:23:421</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:43:26 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:44:49 pm</span>
+<span class='badge badge-default'>00:01:23:421</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:44:49 pm</td>
+        <td>
+          merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_IsoLogin_AddonUser_WithFeeProfile</p>
+            <p class="text-sm">
+              <span>8:43:26 pm</span> / <span>00:01:17:404</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_IsoLogin_AddonUser_WithFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:43:26 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:44:43 pm</span>
+<span class='badge badge-default'>00:01:17:404</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:44:43 pm</td>
+        <td>
+          merchantCreation_IsoLogin_AddonUser_WithFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile</p>
+            <p class="text-sm">
+              <span>8:43:26 pm</span> / <span>00:01:26:268</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:43:26 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:44:53 pm</span>
+<span class='badge badge-default'>00:01:26:268</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:44:53 pm</td>
+        <td>
+          merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</p>
+            <p class="text-sm">
+              <span>8:43:31 pm</span> / <span>00:01:29:350</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:43:31 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:45:01 pm</span>
+<span class='badge badge-default'>00:01:29:350</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:01 pm</td>
+        <td>
+          merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_AgentLogin_PrimaryUser_WithoutFee</p>
+            <p class="text-sm">
+              <span>8:43:32 pm</span> / <span>00:01:21:554</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_AgentLogin_PrimaryUser_WithoutFee</h5>
+<span class='badge badge-success'>04.07.2023 8:43:32 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:44:54 pm</span>
+<span class='badge badge-default'>00:01:21:554</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:44:54 pm</td>
+        <td>
+          merchantCreation_AgentLogin_PrimaryUser_WithoutFee is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_AgentLogin_PrimaryUser_WithFee</p>
+            <p class="text-sm">
+              <span>8:43:34 pm</span> / <span>00:01:25:409</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_AgentLogin_PrimaryUser_WithFee</h5>
+<span class='badge badge-success'>04.07.2023 8:43:34 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:44:59 pm</span>
+<span class='badge badge-default'>00:01:25:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:44:59 pm</td>
+        <td>
+          merchantCreation_AgentLogin_PrimaryUser_WithFee is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_AgentLogin_AddonUser_WithFeeProfile</p>
+            <p class="text-sm">
+              <span>8:45:00 pm</span> / <span>00:01:26:623</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_AgentLogin_AddonUser_WithFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:45:00 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:26 pm</span>
+<span class='badge badge-default'>00:01:26:623</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:26 pm</td>
+        <td>
+          merchantCreation_AgentLogin_AddonUser_WithFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile</p>
+            <p class="text-sm">
+              <span>8:45:04 pm</span> / <span>00:01:24:050</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile</h5>
+<span class='badge badge-success'>04.07.2023 8:45:04 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:28 pm</span>
+<span class='badge badge-default'>00:01:24:050</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:28 pm</td>
+        <td>
+          merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">storeTpnCreation_IsoLogin_PrimaryUser</p>
+            <p class="text-sm">
+              <span>8:45:09 pm</span> / <span>00:01:16:064</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">storeTpnCreation_IsoLogin_PrimaryUser</h5>
+<span class='badge badge-success'>04.07.2023 8:45:09 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:25 pm</span>
+<span class='badge badge-default'>00:01:16:064</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:25 pm</td>
+        <td>
+          storeTpnCreation_IsoLogin_PrimaryUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">storeTpnCreation_IsoLogin_AddonUser</p>
+            <p class="text-sm">
+              <span>8:45:11 pm</span> / <span>00:01:21:147</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">storeTpnCreation_IsoLogin_AddonUser</h5>
+<span class='badge badge-success'>04.07.2023 8:45:11 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:32 pm</span>
+<span class='badge badge-default'>00:01:21:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:32 pm</td>
+        <td>
+          storeTpnCreation_IsoLogin_AddonUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">storeTpnCreation_AgentLogin_AddonUser</p>
+            <p class="text-sm">
+              <span>8:45:18 pm</span> / <span>00:01:16:500</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">storeTpnCreation_AgentLogin_AddonUser</h5>
+<span class='badge badge-success'>04.07.2023 8:45:18 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:35 pm</span>
+<span class='badge badge-default'>00:01:16:500</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:35 pm</td>
+        <td>
+          storeTpnCreation_AgentLogin_AddonUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">storeTpnCreation_AgentLogin_PrimaryUser</p>
+            <p class="text-sm">
+              <span>8:45:18 pm</span> / <span>00:01:16:403</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">storeTpnCreation_AgentLogin_PrimaryUser</h5>
+<span class='badge badge-success'>04.07.2023 8:45:18 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:46:35 pm</span>
+<span class='badge badge-default'>00:01:16:403</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:46:35 pm</td>
+        <td>
+          storeTpnCreation_AgentLogin_PrimaryUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">tpnCreation_IsoLogin_AddonUser</p>
+            <p class="text-sm">
+              <span>8:46:41 pm</span> / <span>00:01:00:094</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tpnCreation_IsoLogin_AddonUser</h5>
+<span class='badge badge-success'>04.07.2023 8:46:41 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:47:41 pm</span>
+<span class='badge badge-default'>00:01:00:094</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:47:41 pm</td>
+        <td>
+          tpnCreation_IsoLogin_AddonUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">tpnCreation_IsoLogin_PrimaryUser</p>
+            <p class="text-sm">
+              <span>8:46:42 pm</span> / <span>00:01:02:683</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tpnCreation_IsoLogin_PrimaryUser</h5>
+<span class='badge badge-success'>04.07.2023 8:46:42 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:47:44 pm</span>
+<span class='badge badge-default'>00:01:02:683</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:47:44 pm</td>
+        <td>
+          tpnCreation_IsoLogin_PrimaryUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">tpnCreation_AgentLogin_PrimaryUser</p>
+            <p class="text-sm">
+              <span>8:46:43 pm</span> / <span>00:00:49:386</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tpnCreation_AgentLogin_PrimaryUser</h5>
+<span class='badge badge-success'>04.07.2023 8:46:43 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:47:32 pm</span>
+<span class='badge badge-default'>00:00:49:386</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:47:32 pm</td>
+        <td>
+          tpnCreation_AgentLogin_PrimaryUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">tpnCreation_AgentLogin_AddonUser</p>
+            <p class="text-sm">
+              <span>8:46:47 pm</span> / <span>00:00:53:046</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tpnCreation_AgentLogin_AddonUser</h5>
+<span class='badge badge-success'>04.07.2023 8:46:47 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:47:40 pm</span>
+<span class='badge badge-default'>00:00:53:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:47:40 pm</td>
+        <td>
+          tpnCreation_AgentLogin_AddonUser is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">surchargeFeeTxWithQPayNow_MerchantPrimaryLogin</p>
+            <p class="text-sm">
+              <span>8:46:49 pm</span> / <span>00:01:20:044</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">surchargeFeeTxWithQPayNow_MerchantPrimaryLogin</h5>
+<span class='badge badge-success'>04.07.2023 8:46:49 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:48:09 pm</span>
+<span class='badge badge-default'>00:01:20:044</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:48:09 pm</td>
+        <td>
+          surchargeFeeTxWithQPayNow_MerchantPrimaryLogin is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">customFeeTxWithQPayNow_MerchantPrimaryLogin</p>
+            <p class="text-sm">
+              <span>8:46:53 pm</span> / <span>00:01:29:421</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">customFeeTxWithQPayNow_MerchantPrimaryLogin</h5>
+<span class='badge badge-success'>04.07.2023 8:46:53 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:48:23 pm</span>
+<span class='badge badge-default'>00:01:29:421</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:48:23 pm</td>
+        <td>
+          customFeeTxWithQPayNow_MerchantPrimaryLogin is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author="BhaskarMurthy"
+          tag="Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">customFeeTxWithQPaySendLink_MerchantPrimaryLogin</p>
+            <p class="text-sm">
+              <span>8:47:42 pm</span> / <span>00:01:29:645</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">customFeeTxWithQPaySendLink_MerchantPrimaryLogin</h5>
+<span class='badge badge-success'>04.07.2023 8:47:42 pm</span>
+<span class='badge badge-danger'>04.07.2023 8:49:11 pm</span>
+<span class='badge badge-default'>00:01:29:645</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:49:11 pm</td>
+        <td>
+          customFeeTxWithQPaySendLink_MerchantPrimaryLogin is Passed 
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>merchantCreation_IsoLogin_AddonUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>merchantCreation_AgentLogin_PrimaryUser_WithoutFee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>merchantCreation_AgentLogin_PrimaryUser_WithFee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>merchantCreation_AgentLogin_AddonUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>storeTpnCreation_IsoLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>storeTpnCreation_IsoLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>storeTpnCreation_AgentLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>storeTpnCreation_AgentLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>tpnCreation_IsoLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>tpnCreation_IsoLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>tpnCreation_AgentLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>tpnCreation_AgentLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>surchargeFeeTxWithQPayNow_MerchantPrimaryLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>customFeeTxWithQPayNow_MerchantPrimaryLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>customFeeTxWithQPaySendLink_MerchantPrimaryLogin</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+</span>
+<p class="name">BhaskarMurthy</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>BhaskarMurthy</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>merchantCreation_IsoLogin_AddonUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>merchantCreation_AgentLogin_PrimaryUser_WithoutFee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:43:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>merchantCreation_AgentLogin_PrimaryUser_WithFee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>merchantCreation_AgentLogin_AddonUser_WithFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>storeTpnCreation_IsoLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>storeTpnCreation_IsoLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>storeTpnCreation_AgentLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:45:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>storeTpnCreation_AgentLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>tpnCreation_IsoLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>tpnCreation_IsoLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>tpnCreation_AgentLogin_PrimaryUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>tpnCreation_AgentLogin_AddonUser</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>surchargeFeeTxWithQPayNow_MerchantPrimaryLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:46:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>customFeeTxWithQPayNow_MerchantPrimaryLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:47:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>customFeeTxWithQPaySendLink_MerchantPrimaryLogin</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 7, 2023 08:43:08 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 7, 2023 08:49:12 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>19</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>19</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>19</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"merchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile":83.421,"merchantCreation_IsoLogin_AddonUser_WithFeeProfile":77.404,"merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile":86.268,"merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile":89.35,"merchantCreation_AgentLogin_PrimaryUser_WithoutFee":81.554,"merchantCreation_AgentLogin_PrimaryUser_WithFee":85.409,"merchantCreation_AgentLogin_AddonUser_WithFeeProfile":86.623,"merchantCreation_AgentLogin_AddonUser_WithoutFeeProfile":84.05,"storeTpnCreation_IsoLogin_PrimaryUser":76.064,"storeTpnCreation_IsoLogin_AddonUser":81.147,"storeTpnCreation_AgentLogin_AddonUser":76.5,"storeTpnCreation_AgentLogin_PrimaryUser":76.403,"tpnCreation_IsoLogin_AddonUser":60.094,"tpnCreation_IsoLogin_PrimaryUser":62.683,"tpnCreation_AgentLogin_PrimaryUser":49.386,"tpnCreation_AgentLogin_AddonUser":53.046,"surchargeFeeTxWithQPayNow_MerchantPrimaryLogin":80.044,"customFeeTxWithQPayNow_MerchantPrimaryLogin":89.421,"customFeeTxWithQPaySendLink_MerchantPrimaryLogin":89.645
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>BhaskarMurthy</td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 19,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 19,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -19,7 +19,7 @@ public class MerchantCreation_IsoLogin_AddonUser_WithoutFeeProfile extends BaseT
     @Test(priority = 1,dataProvider = "getData")
     public void merchantCreation_IsoLogin_AddonUser_WithoutFeeProfile(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPwd"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOAddonEmail"), data.get("ISOAddonPwd"));
 
         merchantCreationPage.verifyClickMerchantLink();
         merchantCreationPage.verifyClickAddMerchantBtn();

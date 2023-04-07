@@ -592,7 +592,7 @@ public class QPayWithSendLinkOnCustomFeePage extends BasePage {
         String acutalTotalAmt =StringUtil.ExtractOnlyNumbers(invoiceTotalAmt);
         if(acutalTotalAmt.equalsIgnoreCase(data.get("Expected TotalAmt").trim())){
             falg=true;
-            System.out.println("Amount Exact Match");
+            System.out.println("Invoice Amount Exact Match,After the tx completed");
         }else{
             try {
                 throw new Exception("Before Tx Amount Not Match");
@@ -602,7 +602,8 @@ public class QPayWithSendLinkOnCustomFeePage extends BasePage {
         }
     }
 
-    public QPayWithSendLinkOnCustomFeePage verifyInvoiceStatusAfterTx(){
+    public QPayWithSendLinkOnCustomFeePage verifyInvoiceStatusAfterTx() throws InterruptedException {
+        Thread.sleep(2000);
         String isStatuspendingTxt = getTexts(getStatus,WaitStrategy.VISIABLE);
         if(isStatuspendingTxt.equalsIgnoreCase("Success")){
             System.out.println("Payment Status Exact Match");
