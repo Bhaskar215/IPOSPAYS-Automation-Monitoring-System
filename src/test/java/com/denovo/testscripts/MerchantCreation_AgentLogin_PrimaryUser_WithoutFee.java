@@ -1,13 +1,11 @@
 
 package com.denovo.testscripts;
-
 import com.denovo.Pages.LoginPage;
 import com.denovo.Pages.MerchantCreationPage;
 import com.denovo.Util.DataProviderUtil;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 import java.util.Map;
 
@@ -18,7 +16,7 @@ public class MerchantCreation_AgentLogin_PrimaryUser_WithoutFee extends BaseTest
     @Test(priority = 1,dataProvider = "getData")
     public void merchantCreation_AgentLogin_PrimaryUser_WithoutFee(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPwd"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("AgentPrimaryEmail"), data.get("AgentPrimaryPWD"));
 
         merchantCreationPage.verifyClickMerchantLink();
         merchantCreationPage.verifyClickAddMerchantBtn();

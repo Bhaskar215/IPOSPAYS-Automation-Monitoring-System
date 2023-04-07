@@ -13,7 +13,7 @@ import java.util.Map;
 public class TpnCreation_IsoLogin_PrimaryUser extends BaseTest {
 
     LoginPage loginPage = new LoginPage();
-    TpnCreationPage tpnCreationPage=new TpnCreationPage();;
+    TpnCreationPage tpnCreationPage=new TpnCreationPage();
 
 
     @Test(priority = 1,dataProvider = "getData")

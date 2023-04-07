@@ -7,6 +7,7 @@ import com.denovo.Pages.LoginPage;
 import com.denovo.Pages.QPayWithSendLinkOnCustomFeePage;
 import com.denovo.Util.DataProviderUtil;
 import com.denovo.Util.JavascriptExecutorUtil;
+import com.denovo.constants.FrameWorkConstants;
 import org.assertj.core.api.Assertions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -71,7 +72,7 @@ public class CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin extends BaseTest  
     @DataProvider
     public  Object[][] getData() throws IOException {
         Object[][] arrObject=null;
-        arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/CloudPos.xlsx",
+        arrObject= DataProviderUtil.getExcelData(FrameWorkConstants.getExcelPATH(),
                 "QPayWithSendlinkCustomFee");
         return arrObject;
     }

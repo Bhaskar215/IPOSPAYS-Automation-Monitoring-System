@@ -1,12 +1,14 @@
 package com.denovo.Pages;
 
 import com.denovo.Driver.DriverManager;
+import com.denovo.Util.JavascriptExecutorUtil;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
 import java.util.Map;
 
@@ -341,7 +343,9 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
                     click(clickConfirm,WaitStrategy.CLICKABLE);
 
                     Thread.sleep(2000);
-                    click(clickClose,WaitStrategy.CLICKABLE);
+                    //click(clickClose,WaitStrategy.CLICKABLE);
+                    WebElement clickCloseBtn=DriverManager.getDriver().findElement(clickClose);
+                    JavascriptExecutorUtil.clickElementByJs(DriverManager.getDriver(),clickCloseBtn);
 
                     click(clickSaveBtn,WaitStrategy.CLICKABLE);
                 }else{

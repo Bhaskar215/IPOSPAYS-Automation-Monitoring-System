@@ -19,7 +19,7 @@ public class TpnCreation_IsoLogin_AddonUser extends BaseTest {
     @Test(priority = 1,dataProvider = "getData")
     public void tpnCreation_IsoLogin_AddonUser(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPwd"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOAddOnEmail"), data.get("ISOAddOnPwd"));
 
         tpnCreationPage.verifyTpnCreationInfo(data);
     }

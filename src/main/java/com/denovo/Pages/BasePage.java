@@ -20,7 +20,7 @@ public class BasePage {
         WebElement ele=ExplicitWaitFactory.performExplicityWait(waitStrategy,locator);
         if(Objects.nonNull(ele)){
             ele.clear();
-            ele.sendKeys(sendValue);
+            ele.sendKeys(sendValue.trim());
         }
         else {
             System.out.println("Element Not Found in the Dom" +locator.toString());

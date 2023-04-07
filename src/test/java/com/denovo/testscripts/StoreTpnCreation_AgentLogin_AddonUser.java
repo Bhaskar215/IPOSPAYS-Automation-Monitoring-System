@@ -20,7 +20,7 @@ public class StoreTpnCreation_AgentLogin_AddonUser extends BaseTest {
     @Test(priority = 1,dataProvider = "getData")
     public void storeTpnCreation_AgentLogin_AddonUser(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPwd"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("AgentAddonEmail"), data.get("AgentAddonPwd"));
         storeTpnCreationPage.verifyStoreCreationInfo(data);
 
     }

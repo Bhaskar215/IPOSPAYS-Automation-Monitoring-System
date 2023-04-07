@@ -18,7 +18,7 @@ public class MerchantCreation_AgentLogin_PrimaryUser_WithFee extends BaseTest {
     @Test(priority = 1,dataProvider = "getData")
     public void merchantCreation_AgentLogin_PrimaryUser_WithFee(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPwd"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("AgentPrimaryEmail"), data.get("AgentPrimaryPWD"));
 
         merchantCreationPage.verifyClickMerchantLink();
         merchantCreationPage.verifyClickAddMerchantBtn();

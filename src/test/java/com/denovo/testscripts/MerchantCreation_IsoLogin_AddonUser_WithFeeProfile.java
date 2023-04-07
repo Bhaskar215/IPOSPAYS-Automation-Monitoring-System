@@ -35,5 +35,4 @@ public class MerchantCreation_IsoLogin_AddonUser_WithFeeProfile extends BaseTest
                 "ISO(Addon)MerchantWithFee");
         return arrObject;
     }
-
 }

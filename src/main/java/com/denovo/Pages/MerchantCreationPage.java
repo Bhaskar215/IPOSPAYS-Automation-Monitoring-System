@@ -263,7 +263,7 @@ public class MerchantCreationPage extends BasePage{
         StringUtil.ClicklistofBtnByGetText(data.get("Select Profile"),profileIdDropDown,DriverManager.getDriver());
 
 
-        sendKeys(midField,data.get(" MID"),WaitStrategy.VISIABLE);
+        sendKeys(midField,data.get("MID"),WaitStrategy.VISIABLE);
 
         //
         sendKeys(agentField,data.get("Agent"),WaitStrategy.VISIABLE);

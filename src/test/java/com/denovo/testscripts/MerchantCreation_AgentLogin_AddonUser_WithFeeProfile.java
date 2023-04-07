@@ -18,7 +18,7 @@ public class MerchantCreation_AgentLogin_AddonUser_WithFeeProfile extends BaseTe
     @Test(priority = 1,dataProvider = "getData")
     public void merchantCreation_AgentLogin_AddonUser_WithFeeProfile(Map<String,String> data) throws InterruptedException {
 
-        loginPage.verifyLoginWithCorrectCredentials(data.get("AgentPrimaryEmail"), data.get("AgentPrimaryPWD"));
+        loginPage.verifyLoginWithCorrectCredentials(data.get("AgentAddonEmail"), data.get("AgentAddonPwd"));
 
          merchantCreationPage.verifyClickMerchantLink();
 
