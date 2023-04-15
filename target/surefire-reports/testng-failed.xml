@@ -7,13 +7,6 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="RegressionTest(failed)" verbose="0">
     <classes>
-      <class name="com.denovo.testscripts.SystemLoginTransactionTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="TransactionPageLoadingTest"/>
-        </methods>
-      </class> <!-- com.denovo.testscripts.SystemLoginTransactionTest -->
       <class name="com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin">
         <methods>
           <include name="teardown"/>
