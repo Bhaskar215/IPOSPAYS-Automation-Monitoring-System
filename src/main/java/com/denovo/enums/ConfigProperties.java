@@ -2,11 +2,12 @@ package com.denovo.enums;
 
 public enum ConfigProperties {
 
-    DEVURL,
+    URL,
     OVERRIDEREPORTS,
     PASSEDSTEPSSCREENSHOTS,
     FAILEDSTEPSSCREENSHOTS,
     SKIPPEDSTEPSSCREENSHOTS,
+    RUNMODE,
     BROWSER
 
 }

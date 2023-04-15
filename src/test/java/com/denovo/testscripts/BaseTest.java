@@ -2,27 +2,21 @@ package com.denovo.testscripts;
 
 
 import com.denovo.Driver.Driver;
-import com.denovo.Driver.DriverManager;
-import com.fasterxml.jackson.databind.ser.Serializers;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
-import java.io.IOException;
+import java.util.Map;
 
 public class BaseTest {
-
     protected BaseTest(){
 
     }
 
+    @SuppressWarnings("unchecked")
     @BeforeMethod
-    protected void setUp() throws Exception {
-        Driver.initDriver();
+    protected void setUp(Object[]data) throws Exception {
+       Map<String,String>map=(Map<String,String>)data[0];
+        Driver.initDriver(map.get("Browser"));
     }
 
     @AfterMethod

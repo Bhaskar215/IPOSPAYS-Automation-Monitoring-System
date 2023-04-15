@@ -39,9 +39,13 @@ public final class ReadPropertyFile {
 
     //Hashmap is Faster compare to Hashtable
     //HashMap Method
-    public static String getValue(ConfigProperties key) throws Exception {
+    public static String getValue(ConfigProperties key){
         if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
-            throw new Exception("Property Name " + key + " is not Found.Please Check Config.Properties");
+            try {
+                throw new Exception("Property Name " + key + " is not Found.Please Check Config.Properties");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return CONFIGMAP.get(key.name().toLowerCase());
     }

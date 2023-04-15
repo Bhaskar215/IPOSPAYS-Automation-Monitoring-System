@@ -2,22 +2,12 @@
 package com.denovo.Pages;
 
 import com.denovo.Driver.DriverManager;
-import com.denovo.Util.JavascriptExecutorUtil;
 import com.denovo.Util.StringUtil;
-import com.denovo.Util.TestUtil;
 import com.denovo.enums.WaitStrategy;
-import com.denovo.factories.ExplicitWaitFactory;
 import io.qameta.allure.Step;
-import org.apache.batik.ext.awt.image.renderable.DeferRable;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.Map;
 
 
@@ -252,11 +242,10 @@ public class MerchantCreationPage extends BasePage{
 
         sendKeys(defaultLabel,data.get("Default Label"),WaitStrategy.VISIABLE);
 
+
         sendKeys(binField,data.get("Bin"),WaitStrategy.VISIABLE);
 
-
         //Profile Info
-
         click(profileIdField,WaitStrategy.CLICKABLE);
 
 

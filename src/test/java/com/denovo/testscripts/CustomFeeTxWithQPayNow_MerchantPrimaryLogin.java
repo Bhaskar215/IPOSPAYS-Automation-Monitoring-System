@@ -61,7 +61,7 @@ public class CustomFeeTxWithQPayNow_MerchantPrimaryLogin extends BaseTest {
         softAssert.assertAll();
     }
 
-    @DataProvider
+    @DataProvider(parallel = true)
     public  Object[][] getData() throws IOException {
         Object[][] arrObject=null;
         arrObject= DataProviderUtil.getExcelData(FrameWorkConstants.getExcelPATH(),

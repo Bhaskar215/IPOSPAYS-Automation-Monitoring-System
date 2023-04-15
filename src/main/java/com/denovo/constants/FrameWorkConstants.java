@@ -3,6 +3,8 @@ package com.denovo.constants;
 import com.denovo.Config.ReadPropertyFile;
 import com.denovo.enums.ConfigProperties;
 
+import java.time.Duration;
+
 public final class FrameWorkConstants {
 
     private FrameWorkConstants(){

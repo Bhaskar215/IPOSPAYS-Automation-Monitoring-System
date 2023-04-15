@@ -170,6 +170,7 @@ public class TpnCreationPage extends BasePage{
         sendKeys(termIdField,data.get("TermID"),WaitStrategy.VISIABLE);
 
         click(clickSavebtn,WaitStrategy.CLICKABLE);
+        Thread.sleep(6000);
 
         return null;
     }

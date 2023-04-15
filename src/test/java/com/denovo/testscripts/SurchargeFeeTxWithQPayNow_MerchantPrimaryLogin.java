@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class SurchargeFeeTxWithQPayNow_MerchantPrimaryLogin extends BaseTest {
 
-    LoginPage loginPage  = new LoginPage();;
+    LoginPage loginPage  = new LoginPage();
     QuickPayWithSurchargeFeePage quickPayWithSurchargeFeePage = new QuickPayWithSurchargeFeePage();
 
     SoftAssert softAssert= new SoftAssert();
@@ -30,7 +30,7 @@ public class SurchargeFeeTxWithQPayNow_MerchantPrimaryLogin extends BaseTest {
 
             Assert.assertEquals(isParameterSaved, "Parameter Updated Successfully","Parameter Failed");
 
-        quickPayWithSurchargeFeePage.verifyLogoutFromIso();
+            quickPayWithSurchargeFeePage.verifyLogoutFromIso();
 
              loginPage.verifyLoginWithCorrectCredentials(data.get("MerchantPrimaryUser"), data.get("MerchantPrimaryPwd"));
 

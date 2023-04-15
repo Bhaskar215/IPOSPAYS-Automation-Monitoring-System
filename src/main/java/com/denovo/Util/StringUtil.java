@@ -234,6 +234,24 @@ public class StringUtil {
         return flag;
     }
 
+    public static Boolean isBtnEnable(By locator){
+        boolean flag=false;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement btnElement=ExplicitWaitFactory.performExplicityWait(WaitStrategy.CLICKABLE,locator);
+
+        if(btnElement.getAttribute("aria-pressed").equalsIgnoreCase("false")){
+            flag=true;
+        }
+        else{
+            System.out.println("already disabled");
+        }
+        return flag;
+    }
+
     public static Boolean isRadioBtnDisable(By locator){
         boolean flag=false;
         WebElement radioBtnElement=ExplicitWaitFactory.performExplicityWait(WaitStrategy.VISIABLE,locator);
