@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Regression</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 6, 2023 11:41:05 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 16, 2023 06:07:42 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,16 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,17 +81,29 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">BhaskarMurthy</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Regression</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
+          author="BhaskarMurthy"
+          tag="Regression"
           device="">
           <div class="test-detail">
-            <p class="name">merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</p>
+            <p class="name">TransactionPageLoadingTest</p>
             <p class="text-sm">
-              <span>11:41:21 pm</span> / <span>00:00:42:616</span>
+              <span>6:08:00 pm</span> / <span>00:00:13:799</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,14 +111,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile</h5>
-<span class='badge badge-success'>04.06.2023 11:41:21 pm</span>
-<span class='badge badge-danger'>04.06.2023 11:42:04 pm</span>
-<span class='badge badge-default'>00:00:42:616</span>
+<h5 class="test-status text-pass">TransactionPageLoadingTest</h5>
+<span class='badge badge-success'>04.16.2023 6:08:00 pm</span>
+<span class='badge badge-danger'>04.16.2023 6:08:13 pm</span>
+<span class='badge badge-default'>00:00:13:799</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">BhaskarMurthy</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -104,9 +128,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:42:04 pm</td>
+        <td>6:08:13 pm</td>
         <td>
-          merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile is Passed 
+          TransactionPageLoadingTest is Passed 
         </td>
       </tr>
   </tbody>
@@ -123,18 +147,116 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:08:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TransactionPageLoadingTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">BhaskarMurthy</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>BhaskarMurthy</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:08:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TransactionPageLoadingTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 6, 2023 11:41:05 pm</h3>
+<h3>Apr 16, 2023 06:07:42 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 6, 2023 11:42:04 pm</h3>
+<h3>Apr 16, 2023 06:08:14 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -204,10 +326,45 @@
 </div></div>
 <script>
 var timeline = {
-"merchantCreation_IsoLogin_PrimaryUser_WithFeeProfile":42.616
+"TransactionPageLoadingTest":13.799
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>BhaskarMurthy</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Regression</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>

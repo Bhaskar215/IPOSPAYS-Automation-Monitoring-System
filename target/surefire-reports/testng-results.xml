@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-16T15:26:39 IST" name="DenovoWebPortal Suite File" finished-at="2023-04-16T15:27:10 IST" duration-ms="30455">
+  <suite started-at="2023-04-16T18:07:42 IST" name="DenovoWebPortal Suite File" finished-at="2023-04-16T18:08:14 IST" duration-ms="32120">
     <groups>
     </groups>
-    <test started-at="2023-04-16T15:26:39 IST" name="RegressionTest" finished-at="2023-04-16T15:27:10 IST" duration-ms="30455">
+    <test started-at="2023-04-16T18:07:42 IST" name="RegressionTest" finished-at="2023-04-16T18:08:14 IST" duration-ms="32120">
       <class name="com.denovo.testscripts.SystemLoginTransactionTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T15:26:40 IST" name="setUp" finished-at="2023-04-16T15:26:54 IST" duration-ms="13665" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T18:07:43 IST" name="setUp" finished-at="2023-04-16T18:08:00 IST" duration-ms="16444" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@77d18d0b]]>
+                <![CDATA[[Ljava.lang.Object;@652ce654]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TransactionPageLoadingTest(java.util.Map)[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T15:26:54 IST" name="TransactionPageLoadingTest" data-provider="getData" finished-at="2023-04-16T15:27:09 IST" duration-ms="14828" status="PASS">
+        <test-method signature="TransactionPageLoadingTest(java.util.Map)[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T18:08:00 IST" name="TransactionPageLoadingTest" data-provider="getData" finished-at="2023-04-16T18:08:13 IST" duration-ms="13797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TransactionPageLoadingTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T15:27:09 IST" name="teardown" finished-at="2023-04-16T15:27:10 IST" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.denovo.testscripts.SystemLoginTransactionTest@757acd7b]" started-at="2023-04-16T18:08:13 IST" name="teardown" finished-at="2023-04-16T18:08:14 IST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
