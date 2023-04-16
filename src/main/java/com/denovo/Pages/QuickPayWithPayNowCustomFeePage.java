@@ -5,11 +5,10 @@ import com.denovo.Reports.ExtentLogger;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
-import io.qameta.allure.Step;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
-import java.lang.reflect.Method;
 import java.util.Map;
 
 public class QuickPayWithPayNowCustomFeePage extends BasePage {
@@ -113,13 +112,12 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
     String CustomFeeAmt;
 
 
-    @Step("Click the Steam Link")
     public void verifyClickSteamLink() {
         click(clickSteam, WaitStrategy.CLICKABLE);
 
     }
 
-    @Step("Click the Steam Link")
+
     public void verifyClickEditParamLink() {
 
        /* TestUtil.waitForElementToBeVisible(clickEditParamLink);
@@ -128,7 +126,7 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
         click(clickEditParamLink, WaitStrategy.CLICKABLE);
     }
 
-    @Step("Click the Edit Parameter button")
+
     public void verifyClickEditParamButton() throws InterruptedException {
 
         click(clickEditParamButton, WaitStrategy.CLICKABLE);
@@ -151,7 +149,7 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
         searchCloudPosTpn(isTpnPreFilled,searchCloudPosTpn,CloudPostpn,WaitStrategy.CLICKABLE);
     }
 
-    @Step("")
+
     public void verifyClickTipTaxSection(){
         click(clickTipAndTax,WaitStrategy.CLICKABLE);
     }
@@ -169,7 +167,7 @@ public class QuickPayWithPayNowCustomFeePage extends BasePage {
 
     }
 
-    @Step("QuickSale Info")
+
     private String fillQuickSaleWithCustomFeeParamInfo(Map<String,String>data) throws InterruptedException {
         verifyClickSteamLink();
         verifyClickEditParamLink();

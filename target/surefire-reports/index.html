@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-DenovoWebPortal_Suite_File" class="navigator-link">
-              <span class="suite-name border-failed">DenovoWebPortal Suite File</span>
+              <span class="suite-name border-passed">DenovoWebPortal Suite File</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-DenovoWebPortal_Suite_File" class="hide-methods failed suite-DenovoWebPortal_Suite_File"> (hide)</a> <!-- hide-methods failed suite-DenovoWebPortal_Suite_File -->
-                      <a href="#" panel-name="suite-DenovoWebPortal_Suite_File" class="show-methods failed suite-DenovoWebPortal_Suite_File"> (show)</a> <!-- show-methods failed suite-DenovoWebPortal_Suite_File -->
-                    </span>
-                    <div class="method-list-content failed suite-DenovoWebPortal_Suite_File">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DenovoWebPortal_Suite_File" title="com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin" class="method navigator-link" hash-for-method="customFeeTxWithQPaySendLink_MerchantPrimaryLogin({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=...)">customFeeTxWithQPaySendLink_MerchantPrimaryLogin({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-DenovoWebPortal_Suite_File -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,59 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DenovoWebPortal_Suite_File" class="panel DenovoWebPortal_Suite_File">
-          <div class="suite-DenovoWebPortal_Suite_File-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="customFeeTxWithQPaySendLink_MerchantPrimaryLogin({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=...)">
-                  </a> <!-- customFeeTxWithQPaySendLink_MerchantPrimaryLogin({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=...) -->
-                  <span class="method-name">customFeeTxWithQPaySendLink_MerchantPrimaryLogin</span>
-                  <span class="parameters">({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=Description, Tax=No, DisplayLabel=CustomFee, CustomFee TPN=364222214920 , TPN=364222214920 , Phone=, ValueAdd=Disable, MerchantPrimaryPwd=Denovo@2021, MerchantPrimaryUser=warren@cloud-mail.top, typePercentageOrDollar=%, DiscloseFee=Yes, Expected FeeAmt=0.10, Capped At=4.99, ISOPrimaryEmail=bhaskarmurthy215@gmail.com, Fee=Enable, Amount=2.00, Expiration=12/24, Transaction Type=Sale, Disclaimer=Disclaimer, Expected TotalAmt=2.10, Payment Type=Sendlink, Expire=OneWeek, References=references12, Fee Type=CustomFee, Expected BaseAmt=2.01, Tip=No, Percentage Of Tx Amount=100, ISOPrimaryPwd=Denovo@2021, Browser=Chrome})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //label[text()=&apos;Fee&apos;]//following::p-selectbutton[1]//span[text()=&apos;Enable&apos;]//parent::div (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.denovo.factories.ExplicitWaitFactory.performExplicityWait(ExplicitWaitFactory.java:25)
-	at com.denovo.Util.StringUtil.isBtnDisable(StringUtil.java:226)
-	at com.denovo.Pages.QPayWithSendLinkOnCustomFeePage.verifyFeeEnable(QPayWithSendLinkOnCustomFeePage.java:431)
-	at com.denovo.Pages.QPayWithSendLinkOnCustomFeePage.fillQPayWithSendLinkCustomFeeParamInfo(QPayWithSendLinkOnCustomFeePage.java:348)
-	at com.denovo.Pages.QPayWithSendLinkOnCustomFeePage.verifyQPayWithSendLinkOnCustomFeeParamInfo(QPayWithSendLinkOnCustomFeePage.java:788)
-	at com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin.customFeeTxWithQPaySendLink_MerchantPrimaryLogin(CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin.java:31)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=112.0.5615.87)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-2K98EE4&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55766}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 759acb38e4907b1b0953b62e20fb8466
-*** Element info: {Using=xpath, value=//label[text()=&apos;Fee&apos;]//following::p-selectbutton[1]//span[text()=&apos;Enable&apos;]//parent::div}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 21 more
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DenovoWebPortal_Suite_File-class-failed -->
           <div class="suite-DenovoWebPortal_Suite_File-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -278,20 +211,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'customFeeTxWithQPaySendLink_MerchantPrimaryLogin')
-data.setCell(0, 2, 'com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin')
-data.setCell(0, 3, 30126);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TransactionPageLoadingTest')
-data.setCell(1, 2, 'com.denovo.testscripts.SystemLoginTransactionTest')
-data.setCell(1, 3, 16396);
+data.setCell(0, 1, 'TransactionPageLoadingTest')
+data.setCell(0, 2, 'com.denovo.testscripts.SystemLoginTransactionTest')
+data.setCell(0, 3, 14828);
 window.suiteTableData['DenovoWebPortal_Suite_File']= { tableData: data, tableDiv: 'times-div-DenovoWebPortal_Suite_File'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-DenovoWebPortal_Suite_File">
               </div> <!-- times-div-DenovoWebPortal_Suite_File -->
             </div> <!-- times-div -->
@@ -317,35 +246,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp([{CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">customFeeTxWithQPaySendLink_MerchantPrimaryLogin({CardNumber=5146 3150 0000 0055, country=India, Action=QuickPay, Email=@cloud-mail.top, Description=...)</span>
-                <span class="method-start">11437 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">41602 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.denovo.testscripts.SystemLoginTransactionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp([{SystemPrimaryPWD=Denovo@2021, SystemPrimaryEmail=bmurthy@denovosystem.com, Browser=Chrome}])</span>
-                <span class="method-start">42004 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TransactionPageLoadingTest({SystemPrimaryPWD=Denovo@2021, SystemPrimaryEmail=bmurthy@denovosystem.com, Browser=Chrome})</span>
-                <span class="method-start">51035 ms</span>
+                <span class="method-start">13667 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">67449 ms</span>
+                <span class="method-start">28513 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

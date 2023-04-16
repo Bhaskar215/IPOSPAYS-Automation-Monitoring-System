@@ -5,7 +5,6 @@ import com.denovo.Util.JavascriptExecutorUtil;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -113,13 +112,13 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
     String SurchargeFeeAmt;
 
 
-    @Step("Click the Steam Link")
+
     public void verifyClickSteamLink() {
         click(clickSteam, WaitStrategy.CLICKABLE);
 
     }
 
-    @Step("Click the Steam Link")
+
     public void verifyClickEditParamLink() {
 
        /* TestUtil.waitForElementToBeVisible(clickEditParamLink);
@@ -128,7 +127,6 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
         click(clickEditParamLink, WaitStrategy.CLICKABLE);
     }
 
-    @Step("Click the Edit Parameter button")
     public void verifyClickEditParamButton() throws InterruptedException {
 
         click(clickEditParamButton, WaitStrategy.CLICKABLE);
@@ -144,7 +142,7 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
         searchCloudPosTpn(isTpnPreFilled,searchCloudPosTpn,CloudPostpn,WaitStrategy.CLICKABLE);
     }
 
-    @Step("")
+
     public void verifyClickTipTaxSection(){
         click(clickTipAndTax,WaitStrategy.CLICKABLE);
     }
@@ -154,7 +152,6 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
     }
 
 
-    @Step("")
     public void verifyLogoutFromIso() {
 
         click(clickAvatarLogo,WaitStrategy.CLICKABLE);
@@ -163,7 +160,7 @@ public class QuickPayWithSurchargeFeePage extends BasePage {
 
     }
 
-    @Step("QuickSale Info")
+
     private String fillQuickSaleWithSurchargeFeeParamInfo(Map<String,String>data) throws InterruptedException {
         verifyClickSteamLink();
         verifyClickEditParamLink();

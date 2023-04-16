@@ -7,7 +7,6 @@ import com.denovo.Util.JavascriptExecutorUtil;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
-import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.testng.asserts.SoftAssert;
 
@@ -238,18 +237,17 @@ public class QPayWithSendLinkOnCustomFeePage extends BasePage {
     SoftAssert softAssert = new SoftAssert();
 
 
-    @Step("Click the Steam Link")
+
     public void verifyClickSteamlink() {
         String clickSteamlink=DynamicXpathUtils.getXpath(CustomXpath.menuLinkTxt,"S.T.E.A.M");
         click(By.xpath(clickSteamlink), WaitStrategy.CLICKABLE);
     }
 
-    @Step("Click the Steam Link")
+
     public void verifyClickEditParamLink() {
         click(clickEditParamLink,WaitStrategy.CLICKABLE);
     }
 
-    @Step("Click the Edit Parameter button")
     public void verifyClickEditParamButton() throws InterruptedException {
         Thread.sleep(2000);
         click(clickEditParamButton,WaitStrategy.CLICKABLE);
@@ -301,7 +299,6 @@ public class QPayWithSendLinkOnCustomFeePage extends BasePage {
         }
     }
 
-    @Step("")
     public void verifyClickTipTaxSection(){
         String tipAndTaxXpath=DynamicXpathUtils.getXpath(clickParamSection,"Tip & Taxes");
         try {
@@ -322,7 +319,7 @@ public class QPayWithSendLinkOnCustomFeePage extends BasePage {
     }
 
 
-    @Step("")
+
     public void verifyLogoutFromIso() {
         click(clickAvatarLogo,WaitStrategy.CLICKABLE);
         click(clickLogout,WaitStrategy.CLICKABLE);

@@ -1,7 +1,6 @@
 package com.denovo.Pages;
 
 import com.denovo.enums.WaitStrategy;
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
@@ -16,7 +15,7 @@ public class LoginPage extends BasePage {
 
 
 
-    @Step("Click Login Button ")
+
     public LoginPage clickLoginbtn(){
        // TestUtil.waitForElementToBeClickable(loginBtn);
         click(loginBtn, WaitStrategy.CLICKABLE);
@@ -25,7 +24,6 @@ public class LoginPage extends BasePage {
     }
 
 
-    @Step("login with username and password step...")
     public LoginPage verifyLoginWithCorrectCredentials(String username,String password) {
       //  TestUtil.waitForElementToBeVisible(usernamefieldbox);
         sendKeys(usernamefieldbox,username,WaitStrategy.VISIABLE);

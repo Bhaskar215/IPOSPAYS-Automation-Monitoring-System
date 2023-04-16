@@ -4,7 +4,6 @@ package com.denovo.Pages;
 import com.denovo.Driver.DriverManager;
 import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
@@ -129,12 +128,12 @@ public class MerchantCreationPage extends BasePage{
 
 
 
-    @Step("")
+
     public void verifyClickMerchantLink(){
         click(clickMerchantLink, WaitStrategy.CLICKABLE);
     }
 
-    @Step("")
+
     public void verifyClickAddMerchantBtn() {
         click(clickDropdownBtn, WaitStrategy.CLICKABLE);
         click(clickAddMerchantBtn, WaitStrategy.CLICKABLE);

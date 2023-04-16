@@ -2,7 +2,6 @@ package com.denovo.Util;
 
 
 import com.denovo.Driver.DriverManager;
-import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -163,7 +162,6 @@ public class TestUtil   {
     }
 
 
-    @Step("Verifying Dejavoo Logo is Dispalyed in Receipt")
     public static boolean isImagePresent(WebElement element, WebDriver driver){
        WebDriverWait wait = new WebDriverWait(driver,20);
         try {
@@ -179,7 +177,7 @@ public class TestUtil   {
         }
     }
 
-    @Step("Handling stale element Exception")
+
     public static boolean handlingStaleException(WebElement element) {
         boolean result = false;
         int attempts = 0;
@@ -195,7 +193,6 @@ public class TestUtil   {
         return false;
     }
 
-    @Step("Handling stale element Exception for Logo")
     public static boolean handlingStaleExceptionForLogo(WebElement element) {
         boolean result = false;
         int attempts = 0;
@@ -211,7 +208,8 @@ public class TestUtil   {
         }
         return false;
     }
-    @Step("Handling stale element Exception for Logo")
+
+
     public static String handlingStaleExceptionForText(WebElement element) {
         boolean result = false;
         int attempts = 0;
