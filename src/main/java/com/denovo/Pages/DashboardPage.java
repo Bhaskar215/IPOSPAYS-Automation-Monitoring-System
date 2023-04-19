@@ -1,13 +1,9 @@
 package com.denovo.Pages;
 
-import com.denovo.Util.DynamicXpathUtils;
-import com.denovo.Util.StringUtil;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import java.util.concurrent.ThreadLocalRandom;
 
 public class DashboardPage extends BasePage{
 
@@ -38,12 +34,25 @@ public class DashboardPage extends BasePage{
 
     private final By clickSaveAndCloseBtn=By.xpath("//*[contains(text(),'Save & Close')]");
 
+    private final By isDashboardLoaded = By.xpath("//*[@class='row ng-star-inserted'][1]");
 
-    public String VerifyDashboardPageIsLoading(){
+
+    public String verifyTransacionVolumeTxtPresent(){
         ExplicitWaitFactory.waitForTextToBePresent(isDashBoardTxtPresent,"Transactions Volume");
         return getTexts(isDashBoardTxtPresent, WaitStrategy.PRESENCE);
     }
 
+
+    public boolean verifyDashboardIsLoaded(){
+        boolean flag = false;
+        try{
+            ExplicitWaitFactory.performExplicityWait(WaitStrategy.VISIABLE,isDashboardLoaded);
+            flag=true;
+        }catch (Exception e) {
+            System.out.println("Dashboard is not Loaded");
+        }
+            return flag;
+    }
 
     public boolean verifyTransactionVolume() {
         boolean flag=true;

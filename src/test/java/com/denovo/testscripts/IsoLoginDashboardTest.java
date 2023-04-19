@@ -10,25 +10,23 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Map;
 
-public class SystemLoginDashboardTest extends BaseTest{
+public class IsoLoginDashboardTest extends BaseTest{
 
     LoginPage loginPage  = new LoginPage();
     DashboardPage dashboardPage = new DashboardPage();
 
 
     @Test(dataProvider = "getData")
-    public void systemLoginDashboard(Map<String,String> data) throws InterruptedException {
-        loginPage.verifyLoginWithCorrectCredentials(data.get("SystemPrimaryEmail"),data.get("SystemPrimaryPWD"));
-        boolean isDashboardPage=dashboardPage.verifyDashboardIsLoaded();
-        Assert.assertTrue(isDashboardPage);
-
+    public void validateIsoLoginDashboardIsLoaded(Map<String,String> data){
+        loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPWD"));
+          boolean isDashboardPage=dashboardPage.verifyDashboardIsLoaded();
+          Assert.assertTrue(isDashboardPage);
     }
 
     @DataProvider
     public  Object[][] getData() throws IOException {
         Object[][] arrObject=null;
-        arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/SE_DataSheet.xlsx","SystemLoginDashboard");
+        arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/SE_DataSheet.xlsx","IsoLoginDashboard");
         return arrObject;
     }
-
 }

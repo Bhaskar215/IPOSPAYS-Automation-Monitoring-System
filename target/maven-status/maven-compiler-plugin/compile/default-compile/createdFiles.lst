@@ -1,9 +1,7 @@
-com\denovo\Pages\QPaySendLink_TipTX_CustomFeePage.class
 com\denovo\enums\ConfigProperties.class
 com\denovo\Reports\ExtentReport.class
 com\denovo\Driver\DriverManager.class
 com\denovo\Pages\LoginPage.class
-com\denovo\Pages\MerchantCreationPage.class
 com\denovo\Util\TestUtil.class
 com\denovo\Config\ReadPropertyFile.class
 com\denovo\Driver\Driver.class
@@ -15,7 +13,6 @@ com\denovo\Pages\TransactionPage.class
 com\denovo\exceptions\BrowserInvocationFailedException.class
 com\denovo\Pages\CustomXpath.class
 com\denovo\Util\ScreenshotUtils.class
-com\denovo\Pages\QuickPayWithSurchargeForm.class
 com\denovo\Util\DynamicXpathUtils.class
 com\denovo\factories\DriverFactory.class
 com\denovo\Util\JavascriptExecutorUtil.class
@@ -25,11 +22,6 @@ com\denovo\Util\ExcelUtils.class
 com\denovo\exceptions\FrameWorkException.class
 com\denovo\factories\ExplicitWaitFactory.class
 com\denovo\Reports\ExtentManager.class
-com\denovo\Pages\QuickPayWithSurchargeFeePage.class
-com\denovo\Pages\TpnCreationPage.class
-com\denovo\Pages\StoreTpnCreationPage.class
-com\denovo\Pages\QuickPayWithPayNowCustomFeePage.class
 com\denovo\Reports\ExtentLogger.class
 com\denovo\constants\FrameWorkConstants.class
 com\denovo\Pages\BasePage.class
-com\denovo\Pages\QPayWithSendLinkOnCustomFeePage.class

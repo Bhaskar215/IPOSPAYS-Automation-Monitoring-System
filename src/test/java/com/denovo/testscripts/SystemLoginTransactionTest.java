@@ -30,8 +30,7 @@ public class SystemLoginTransactionTest extends BaseTest {
     @DataProvider
     public  Object[][] getData() throws IOException {
         Object[][] arrObject=null;
-        /*arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/CloudPos.xlsx",
-                "Merchant(P)SurchargeFee_QPayNow");*/
+
         arrObject= DataProviderUtil.getExcelData(System.getProperty("user.dir")+"/src/main/java/com/denovo/ExcelData/SE_DataSheet.xlsx","SystemLoginTransaction");
         return arrObject;
     }

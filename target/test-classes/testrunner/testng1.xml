@@ -8,49 +8,11 @@
     <test name="RegressionTest" thread-count="1" parallel="methods">
         <classes>
                <!-- Merchant Creation with ISO LOGIN-->
-            <class name="com.denovo.testscripts.MerchantCreation_IsoLogin_PrimaryUser_WithFeeProfile"/>
-            <class name="com.denovo.testscripts.MerchantCreation_IsoLogin_PrimaryUser_WithoutFeeProfile"/>
-
-            <class name="com.denovo.testscripts.MerchantCreation_IsoLogin_AddonUser_WithFeeProfile"/>
-            <class name="com.denovo.testscripts.MerchantCreation_IsoLogin_AddonUser_WithoutFeeProfile"/>
-
-            <!--Merchant Creation with Agent LOGIN-->
-            <class name="com.denovo.testscripts.MerchantCreation_AgentLogin_PrimaryUser_WithFee"/>
-            <class name="com.denovo.testscripts.MerchantCreation_AgentLogin_PrimaryUser_WithoutFee"/>
-
-            <class name="com.denovo.testscripts.MerchantCreation_AgentLogin_AddonUser_WithFeeProfile"/>
-
-            <class name="com.denovo.testscripts.MerchantCreation_AgentLogin_AddonUser_WithoutFeeProfile"/>
-            <!--StoreTpn Creation with ISO LOGIN-->
-
-            <class name="com.denovo.testscripts.StoreTpnCreation_IsoLogin_PrimaryUser"/>
-            <class name="com.denovo.testscripts.StoreTpnCreation_IsoLogin_AddonUser"/>
-
-            <!--StoreTpn Creation with Agent LOGIN-->
-            <class name="com.denovo.testscripts.StoreTpnCreation_AgentLogin_PrimaryUser"/>
-            <class name="com.denovo.testscripts.StoreTpnCreation_AgentLogin_AddonUser"/>
-
-            <!--Tpn Creation with ISO LOGIN-->
-            <class name="com.denovo.testscripts.TpnCreation_IsoLogin_PrimaryUser"/>
-            <class name="com.denovo.testscripts.TpnCreation_IsoLogin_AddonUser"/>
-
-
-            <!--Tpn Creation with Agent LOGIN-->
-            <class name="com.denovo.testscripts.TpnCreation_AgentLogin_PrimaryUser"/>
-            <class name="com.denovo.testscripts.TpnCreation_AgentLogin_AddonUser"/>
-
-            <!-- CustomFee Tx With Merchant Primary LOGIN-->
-            <class name="com.denovo.testscripts.CustomFeeTxWithQPayNow_MerchantPrimaryLogin"/>
-
-            <!-- SurchargeFee Tx With Merchant Primary LOGIN-->
-            <class name="com.denovo.testscripts.SurchargeFeeTxWithQPayNow_MerchantPrimaryLogin"/>
-
-            <!-- CustomFeeTxWithQPaySendLink Tx With Merchant Primary LOGIN-->
-            <class name="com.denovo.testscripts.CustomFeeTxWithQPaySendLink_MerchantPrimaryLogin"/>
-
             <class name="com.denovo.testscripts.SystemLoginDashboardTest"/>
 
             <class name="com.denovo.testscripts.SystemLoginTransactionTest"/>
+
+            <class name="com.denovo.testscripts.IsoLoginDashboardTest"/>
 
         </classes>
     </test>
