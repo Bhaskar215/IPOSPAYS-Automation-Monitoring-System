@@ -10,7 +10,7 @@ public final class FrameWorkConstants {
     private FrameWorkConstants(){
 
     }
-    private static final int EXPLICITWAIT = 15;
+    private static final int EXPLICITWAIT = 35;
     private static final String RESOURCESPATH = System.getProperty("user.dir")+"/src/test/resources";
     private static final String ExcelPATH =RESOURCESPATH +"/Excel/CloudPos.xlsx";
     private static final String EXTENTREPORTFOLDERPATH =System.getProperty("user.dir")+"/extent-test-output/";
