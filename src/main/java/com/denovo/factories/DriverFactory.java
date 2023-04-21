@@ -35,15 +35,6 @@ public final class DriverFactory {
                 cap.setBrowserName(BrowserType.CHROME);
                     driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
             }
-            //
-            else if(runmode.equalsIgnoreCase("jenkins")){
-                DesiredCapabilities cap = new DesiredCapabilities();
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--proxy-server='direct://'")
-                        .addArguments("--disable-dev-shm-usage")
-                        .addArguments("--proxy-bypass-list=*");
-                    driver= new RemoteWebDriver(cap);
-            }
             else{
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
