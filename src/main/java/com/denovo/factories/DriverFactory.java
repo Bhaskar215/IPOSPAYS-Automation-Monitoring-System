@@ -27,14 +27,24 @@ public final class DriverFactory {
         String runmode = ReadPropertyFile.getValue(ConfigProperties.RUNMODE);
 
         if (browser.equalsIgnoreCase("chrome")) {
-            if (runmode.equalsIgnoreCase("remote")) {
+            if(runmode.equalsIgnoreCase("remote")) {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 cap.setBrowserName(BrowserType.CHROME);
                     driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-            }else{
+            }
+            //
+            else if(runmode.equalsIgnoreCase("jenkins")){
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless")
+                        .addArguments("window-sized 1200,600")
+                        .addArguments("--proxy-server='direct://'")
+                        .addArguments("--proxy-bypass-list=*");
+                    driver= new ChromeDriver(options);
+            }
+            else{
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
             }
