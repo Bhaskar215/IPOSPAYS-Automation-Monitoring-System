@@ -39,8 +39,7 @@ public final class DriverFactory {
             else if(runmode.equalsIgnoreCase("jenkins")){
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless")
-                        .addArguments("--proxy-server='direct://'")
+                options.addArguments("--proxy-server='direct://'")
                         .addArguments("--disable-dev-shm-usage")
                         .addArguments("--proxy-bypass-list=*");
                     driver= new RemoteWebDriver(cap);
