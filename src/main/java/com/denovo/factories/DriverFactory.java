@@ -42,8 +42,8 @@ public final class DriverFactory {
                 options.addArguments("--headless")
                         .addArguments("--proxy-server='direct://'")
                         .addArguments("--proxy-bypass-list=*");
-                cap.setBrowserName(BrowserType.CHROME);
-                    driver= new ChromeDriver(options);
+                    cap.setCapability(ChromeOptions.CAPABILITY,options);
+                    driver= new RemoteWebDriver(cap);
             }
             else{
                 WebDriverManager.chromedriver().setup();
