@@ -37,11 +37,12 @@ public final class DriverFactory {
             }
             //
             else if(runmode.equalsIgnoreCase("jenkins")){
+                DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless")
-                        .addArguments("window-sized 1200,600")
                         .addArguments("--proxy-server='direct://'")
                         .addArguments("--proxy-bypass-list=*");
+                cap.setBrowserName(BrowserType.CHROME);
                     driver= new ChromeDriver(options);
             }
             else{
