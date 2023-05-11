@@ -1,6 +1,7 @@
 package com.denovo.factories;
 
 import com.denovo.Config.ReadPropertyFile;
+import com.denovo.Driver.DriverManager;
 import com.denovo.enums.ConfigProperties;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +34,8 @@ public final class DriverFactory {
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 cap.setBrowserName(BrowserType.CHROME);
-                    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+                driver.manage().window().fullscreen();
             }
             else{
                 WebDriverManager.chromedriver().setup();

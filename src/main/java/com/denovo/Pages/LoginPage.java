@@ -8,9 +8,7 @@ public class LoginPage extends BasePage {
 
 
     private final By loginBtn = By.xpath("//span[contains(text(),'Login')]");
-
     private final By usernamefieldbox = By.xpath("//input[@formcontrolname='email']");
-
     private final By passwordfielbox = By.xpath("//input[@formcontrolname='password']");
 
 
