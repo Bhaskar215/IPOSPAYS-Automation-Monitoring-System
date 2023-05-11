@@ -29,7 +29,7 @@ public final class Driver {
                 throw new BrowserInvocationFailedException("Please check the capabilities of the Browser");
             }
             DriverManager.getDriver().get(ReadPropertyFile.getValue(ConfigProperties.URL));
-            //DriverManager.getDriver().manage().window().maximize();
+            DriverManager.getDriver().manage().window().fullscreen();
         }
     }
 
