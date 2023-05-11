@@ -57,4 +57,8 @@ public final class ExtentLogger {
             skip(message);
         }
     }
+
+    public static void info(String message) {
+        ExtentManager.getExtentReport().info(message);
+    }
 }
