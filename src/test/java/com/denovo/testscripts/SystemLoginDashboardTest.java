@@ -17,7 +17,7 @@ public class SystemLoginDashboardTest extends BaseTest{
 
 
     @Test(dataProvider = "getData")
-    public void systemLoginDashboard(Map<String,String> data) throws InterruptedException {
+    public void validateDashboardOnSystemLogin(Map<String,String> data) throws InterruptedException {
         loginPage.verifyLoginWithCorrectCredentials(data.get("SystemPrimaryEmail"),data.get("SystemPrimaryPWD"));
         boolean isDashboardPage=dashboardPage.verifyDashboardIsLoaded();
         Assert.assertTrue(isDashboardPage);

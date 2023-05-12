@@ -17,11 +17,10 @@ public class IsoLoginDashboardTest extends BaseTest {
 
 
     @Test(dataProvider = "getData")
-    public void validateIsoLoginDashboardIsLoaded(Map<String, String> data) {
+    public void validateDashboardOnISOLogin(Map<String, String> data) {
         loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPWD"));
         boolean isDashboardPage = dashboardPage.verifyDashboardIsLoaded();
-        //Assert.assertTrue(isDashboardPage);
-        Assert.fail();
+        Assert.assertTrue(isDashboardPage);
     }
 
     @DataProvider
@@ -30,5 +29,4 @@ public class IsoLoginDashboardTest extends BaseTest {
         arrObject = DataProviderUtil.getExcelData(System.getProperty("user.dir") + "/src/main/java/com/denovo/ExcelData/SE_DataSheet.xlsx", "IsoLoginDashboard");
         return arrObject;
     }
-
 }
