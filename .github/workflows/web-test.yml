@@ -46,4 +46,4 @@ jobs:
 
         - name: send Email
           run:
-            src/main/java/com/denovo/Pages/EmailSenderfile.java
+            java src/main/java/com/denovo/Pages/EmailSenderfile.java
