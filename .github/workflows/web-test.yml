@@ -38,5 +38,32 @@ jobs:
       if: ${{ failure() }}
       needs: run-web-test
       steps:
-        - run: echo 'Jobs2'
+        - name: Set up Python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.9
 
+        - name: Install dependencies
+          run: pip install smtplib
+
+        - name: send Email
+          run:
+            import smtplib
+            from email.mime.text import MIMEText
+
+            # Set up SMTP connection
+            smtp_server = 'smtp.gmail.com'
+            smtp_port = 587
+            smtp_username = ${{ secrets.USER_EMAIL }}
+            smtp_password = ${{ secrets.USER_PASSWORD }}
+            smtp_connection = smtplib.SMTP(smtp_server, smtp_port)
+            smtp_connection.starttls()
+            smtp_connection.login(smtp_username, smtp_password)
+          
+          # Create email message
+            message = MIMEText('The build failed. Please check the logs.')
+            message['Subject'] = 'Build failed'
+            message['From'] = 'bmurthy@denovosystem.com'
+            message['To'] = 'bhaskarmurthy215@gmail.com'
+            smtp_connection.sendmail('bmurthy@denovosystem.com', 'bhaskarmurthy215@gmail.com', message.as_string())
+            smtp_connection.quit()
