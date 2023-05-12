@@ -20,7 +20,8 @@ public class IsoLoginDashboardTest extends BaseTest{
     public void validateIsoLoginDashboardIsLoaded(Map<String,String> data){
         loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPWD"));
           boolean isDashboardPage=dashboardPage.verifyDashboardIsLoaded();
-          Assert.assertTrue(isDashboardPage);
+         // Assert.assertTrue(isDashboardPage);
+        Assert.fail();
     }
 
     @DataProvider
