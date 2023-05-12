@@ -46,4 +46,4 @@ jobs:
 
         - name: send Email
           run:
-             java src/main/java/com/denovo/Pages/EmailSenderfile.java
+            E:\DenovoPortal Automation Monitoring System\src\main\java\com\denovo\Pages\EmailSenderfile.java
