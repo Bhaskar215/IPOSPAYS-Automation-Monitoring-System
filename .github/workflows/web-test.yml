@@ -46,4 +46,4 @@ jobs:
 
         - name: send Email
           run:
-            IPOSPAYS-Automation-Monitoring-System/src/main/java/com/denovo/Pages/EmailSenderfile.java
+            src/main/java/com/denovo/Pages/EmailSenderfile.java
