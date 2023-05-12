@@ -26,10 +26,10 @@ public final class FrameWorkConstants {
 
     public static String createReportPath() throws Exception {
         if(ReadPropertyFile.getValue(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("No")){
-            return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
+            return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/ExtentReport.html";
         }
         else{
-            return EXTENTREPORTFOLDERPATH+"/index.html";
+            return EXTENTREPORTFOLDERPATH+"/ExtentReport.html";
         }
     }
 

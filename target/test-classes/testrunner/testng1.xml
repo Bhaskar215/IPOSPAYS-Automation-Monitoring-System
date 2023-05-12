@@ -13,6 +13,8 @@
             <class name="com.denovo.testscripts.SystemLoginTransactionTest"/>
 
             <class name="com.denovo.testscripts.IsoLoginDashboardTest"/>
+            
+            <class name="com.denovo.testscripts.IsoLoginTransactionTest"></class>
 
         </classes>
     </test>
