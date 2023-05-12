@@ -44,5 +44,6 @@ jobs:
             distribution: 'temurin'
             java-version: '11'
         - name: send Email
+          uses: actions/checkout@v2
           run:
             mnv clean install -PsendEmail
