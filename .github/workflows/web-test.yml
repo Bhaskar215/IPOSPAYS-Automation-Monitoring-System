@@ -1,10 +1,12 @@
 name: run web test in github actions
 
 on: workflow_dispatch
+
 jobs:
   run-web-test:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 5
+    continue-on-error: false
 
     steps:
       - name: pull the project  into the runner
@@ -30,3 +32,13 @@ jobs:
       - name: run the web test
         run:
           mvn clean test
+
+
+  jobs2:
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+    needs:
+      - run-web-test
+    steps:
+      - run: echo 'Jobs2'
+
