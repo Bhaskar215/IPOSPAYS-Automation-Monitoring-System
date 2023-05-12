@@ -48,6 +48,7 @@ public class DashboardPage extends BasePage{
         try{
             ExplicitWaitFactory.performExplicityWait(WaitStrategy.VISIABLE,isDashboardLoaded);
             flag=true;
+            System.out.println("working in github flow");
         }catch (Exception e) {
             System.out.println("Dashboard is not Loaded");
         }
