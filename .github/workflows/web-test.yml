@@ -46,4 +46,4 @@ jobs:
 
         - name: send Email
           run:
-            java EmailSenderfile.java
+            mvn exec:java -Dexec.mainClass="src/main/java/com/denovo/Pages/EmailSenderfile.java"
