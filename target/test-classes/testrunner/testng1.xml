@@ -14,7 +14,7 @@
 
             <class name="com.denovo.testscripts.IsoLoginDashboardTest"/>
             
-            <class name="com.denovo.testscripts.IsoLoginTransactionTest"></class>
+            <class name="com.denovo.testscripts.IsoLoginTransactionTest"/>
 
         </classes>
     </test>
