@@ -33,12 +33,10 @@ jobs:
         run:
           mvn clean test
 
-
   jobs2:
-    runs-on: ubuntu-latest
-    if: ${{ failure() }}
-    needs:
-      - run-web-test
-    steps:
-      - run: echo 'Jobs2'
+      runs-on: ubuntu-latest
+      if: ${{ failure() }}
+      needs: run-web-test
+      steps:
+        - run: echo 'Jobs2'
 
