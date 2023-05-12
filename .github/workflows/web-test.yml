@@ -38,32 +38,32 @@ jobs:
       if: ${{ failure() }}
       needs: run-web-test
       steps:
-        - name: Set up Python
-          uses: actions/setup-python@v2
+        - name: Set up Java
+          uses: actions/setup-java@v2
           with:
-            python-version: 3.9
-
-        - name: Install dependencies
-          run: pip install smtplib
+            java-version: '11'
 
         - name: send Email
           run:
-            import smtplib
-            from email.mime.text import MIMEText
-
-        
-            smtp_server = 'smtp.gmail.com'
-            smtp_port = 587
-            smtp_username = ${{ secrets.USER_EMAIL }}
-            smtp_password = ${{ secrets.USER_PASSWORD }}
-            smtp_connection = smtplib.SMTP(smtp_server, smtp_port)
-            smtp_connection.starttls()
-            smtp_connection.login(smtp_username, smtp_password)
-          
-        
-            message = MIMEText('The build failed. Please check the logs.')
-            message['Subject'] = 'Build failed'
-            message['From'] = 'bmurthy@denovosystem.com'
-            message['To'] = 'bhaskarmurthy215@gmail.com'
-            smtp_connection.sendmail('bmurthy@denovosystem.com', 'bhaskarmurthy215@gmail.com', message.as_string())
-            smtp_connection.quit()
+            import javax.mail.*;
+            import javax.mail.internet.*;
+            Properties props = new Properties();
+            props.put("mail.smtp.host", "smtp.gmail.com");
+            props.put("mail.smtp.port", "587");
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.smtp.starttls.enable", "true");
+            
+            
+            Session session = Session.getInstance(props, new javax.mail.Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication("bmurthy@denovosystem.com", "${{ secrets.USER_PASSWORD }}");
+            }
+            });
+            
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress("bmurthy@denovosystem.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("bhaskarmurthy215@gmail.com"));
+            message.setSubject("Build failed");
+            message.setText("The build failed. Please check the logs.");
+            
+            Transport.send(message);
