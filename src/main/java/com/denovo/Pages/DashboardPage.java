@@ -42,7 +42,6 @@ public class DashboardPage extends BasePage{
         return getTexts(isDashBoardTxtPresent, WaitStrategy.PRESENCE);
     }
 
-
     public boolean verifyDashboardIsLoaded(){
         boolean flag = false;
         try{
