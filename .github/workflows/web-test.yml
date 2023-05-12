@@ -47,9 +47,8 @@ jobs:
         - name: send Email
           run:
             import javax.mail.*;
-            import javax.mail.internet.*;
-            
-            
+        
+        
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.gmail.com");
             props.put("mail.smtp.port", "587");
@@ -58,9 +57,10 @@ jobs:
             
             
             Session session = Session.getInstance(props, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-            return new PasswordAuthentication("bmurthy@denovosystem.com", "${{ secrets.USER_PASSWORD }}");
-            }
+            protected PasswordAuthentication getPasswordAuthentication() 
+             {
+                return new PasswordAuthentication("bmurthy@denovosystem.com", "${{ secrets.USER_PASSWORD }}");
+              }
             });
             
             Message message = new MimeMessage(session);
