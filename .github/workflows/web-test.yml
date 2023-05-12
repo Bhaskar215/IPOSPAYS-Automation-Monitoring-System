@@ -46,27 +46,4 @@ jobs:
 
         - name: send Email
           run:
-            import javax.mail.*;
-        
-        
-            Properties props = new Properties();
-            props.put("mail.smtp.host", "smtp.gmail.com");
-            props.put("mail.smtp.port", "587");
-            props.put("mail.smtp.auth", "true");
-            props.put("mail.smtp.starttls.enable", "true");
-            
-            
-            Session session = Session.getInstance(props, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() 
-             {
-                return new PasswordAuthentication("bmurthy@denovosystem.com", "${{ secrets.USER_PASSWORD }}");
-              }
-            });
-            
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("bmurthy@denovosystem.com"));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("bhaskarmurthy215@gmail.com"));
-            message.setSubject("Build failed");
-            message.setText("The build failed. Please check the logs.");
-            
-            Transport.send(message);
+            E:\DenovoPortal Automation Monitoring System\src\main\java\com\denovo\Pages\EmailSenderfile.java
