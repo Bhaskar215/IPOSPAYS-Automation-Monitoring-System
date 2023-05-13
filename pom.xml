@@ -66,9 +66,6 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>${user.dir}\src\test\resources\testrunner\sendEmail.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                        <argLine>
-                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar"
-                        </argLine>
                     </configuration>
                 </plugin>
             </plugins>

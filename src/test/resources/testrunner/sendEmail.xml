@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="DenovoWebPortal Suite File" data-provider-thread-count="1">
-    <listeners>
+<!--    <listeners>
         <listener class-name="com.denovo.Listeners.MethodInterceptor"/>
         <listener class-name="com.denovo.Listeners.ListenerClass"/>
-    </listeners>
+    </listeners>-->
     <test name="RegressionTest" thread-count="1" parallel="methods">
         <classes>
-               <!-- Merchant Creation with ISO LOGIN-->
             <class name="com.denovo.testscripts.SendEmailTest"/>
-
         </classes>
     </test>
 </suite>
