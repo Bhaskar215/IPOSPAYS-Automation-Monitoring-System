@@ -29,6 +29,9 @@
     </build>
     <profiles>
         <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <id>web</id>
             <build>
                 <pluginManagement>
@@ -48,6 +51,9 @@
             </build>
         </profile>
     <profile>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
         <id>sendemail</id>
         <build>
             <pluginManagement>
