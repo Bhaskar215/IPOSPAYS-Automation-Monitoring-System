@@ -1,0 +1,10 @@
+image: maven:3.6.3
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Sample run
+          trigger: manual
+          script:
+            - echo "successfully runned"
