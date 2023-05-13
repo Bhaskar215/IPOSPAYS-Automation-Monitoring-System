@@ -65,14 +65,14 @@ public class SendEmailTest {
         MimeMultipart multipart = new MimeMultipart();
 
         MimeBodyPart attachment = new MimeBodyPart();
-        attachment.attachFile(new File("extent-test-output/index.html"));
+        attachment.attachFile(new File("extent-test-output/ExtentReport.html"));
 
         MimeBodyPart messageBodyPart = new MimeBodyPart();
         messageBodyPart.setContent("<h1>IPOSPAYS FAILED FAILED REPORT<h1>","text/html");
 
         multipart.addBodyPart(messageBodyPart);
         multipart.addBodyPart(attachment);
-        messageBodyPart.setText("Hi Team, PFA Extent Report Failed Job Details,Download the Extent Report and verify.");
+        messageBodyPart.setText("Hi Team, PFA ExtentReport Failed Details,Download the Extent Report and verify.");
         message.setContent(multipart);
         send(message);
 
