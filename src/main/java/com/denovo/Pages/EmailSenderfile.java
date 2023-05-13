@@ -13,6 +13,7 @@ public class EmailSenderfile {
         props.put("mail.smtp.port", "587");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.transport.protocl","smpt");
 
 
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {

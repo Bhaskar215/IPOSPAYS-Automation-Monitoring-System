@@ -45,4 +45,4 @@ jobs:
             java-version: '11'
         - name: send Email
           run:
-            mvn clean test -PsendEmail
+            mvn clean test -Psendemail
