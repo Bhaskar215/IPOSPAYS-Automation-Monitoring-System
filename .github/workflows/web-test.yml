@@ -31,7 +31,7 @@ jobs:
 
       - name: run the web test
         run:
-          mvn clean test
+          mvn clean install
 
   jobs2:
       runs-on: ubuntu-latest
@@ -46,4 +46,4 @@ jobs:
         - name: send Email
           uses: actions/checkout@v2
           run:
-            mnv clean install -PsendEmail
+            m vnclean install -PsendEmail
