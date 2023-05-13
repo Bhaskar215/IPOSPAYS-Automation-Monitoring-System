@@ -5,13 +5,14 @@ import org.testng.annotations.Test;
 import javax.mail.*;
 import javax.mail.internet.*;
 import java.io.File;
-import java.io.IOException;
 import java.util.Properties;
+
+import static javax.mail.Transport.send;
 
 public class SendEmailTest {
 
     @Test
-    public void sendEmailTest() throws MessagingException, IOException {
+    public void sendEmailTest() throws Exception {
         /*Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
@@ -52,29 +53,28 @@ public class SendEmailTest {
 
         Message message = new MimeMessage(session);
         message.setSubject("IPOSPAYS MONITOR SYSTEM REPORT");
-        message.setContent("<h1>IPOSPAYS FAILED REPORT<h1>","text/hmtl");
 
         Address addressTo = new InternetAddress("bhaskarmurthy215@gmail.com");
-
-        // Address address2To = new InternetAddress("bhaskarmurthy@gmail.com");
-
         message.setRecipient(Message.RecipientType.TO,addressTo);
+
+
         //To send Multiple people
+        // Address address2To = new InternetAddress("bhaskarmurthy@gmail.com");
         // message.addRecipient(Message.RecipientType.TO,address2To);
 
         MimeMultipart multipart = new MimeMultipart();
+
         MimeBodyPart attachment = new MimeBodyPart();
-        attachment.attachFile(new File("extent-test-output/ExtentReport.html"));
+        attachment.attachFile(new File("extent-test-output/index.html"));
 
         MimeBodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setContent("<h1>IPOSPAYS FAILED REPORT<h1>","text/hmtl");
+        messageBodyPart.setContent("<h1>IPOSPAYS FAILED FAILED REPORT<h1>","text/html");
+
         multipart.addBodyPart(messageBodyPart);
         multipart.addBodyPart(attachment);
-
+        messageBodyPart.setText("Hi Team, PFA Extent Report Failed Job Details,Download the Extent Report and verify.");
         message.setContent(multipart);
-
-        Transport.send(message);
+        send(message);
 
     }
 }
-
