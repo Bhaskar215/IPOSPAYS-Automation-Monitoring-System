@@ -13,4 +13,4 @@ pipelines:
       caches:
         - maven
       script:
-        - mvn clean test 
+        - mvn clean test
