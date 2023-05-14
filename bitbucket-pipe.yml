@@ -1,9 +1,16 @@
 image: maven:3.6.3-jdk-11
-
 pipelines:
-    master:
-      - step:
-          name: Sample run
-          trigger: manual
-          script:
-            - echo "successfully runned"
+  default:
+    - step:
+      name: Manual step
+      trigger: manual
+      script:
+       - echo "This step runs once you click the 'Run' button"
+
+
+    - step:
+      name: Build and Test
+      caches:
+        - maven
+      script:
+        - mvn clean test
