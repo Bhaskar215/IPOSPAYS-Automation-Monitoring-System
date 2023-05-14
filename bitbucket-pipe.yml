@@ -1,7 +1,6 @@
 image: maven:3.6.3-jdk-11
 
 pipelines:
-  branches:
     master:
       - step:
           name: Sample run
