@@ -44,6 +44,7 @@ public final class DriverFactory {
                     put("name", "Test badge...");
                     put("sessionTimeout", "5m");
                     put("screenResolution","1920x1080x24");
+                    put("headless",true);
                     put("enableVNC", true); // if true While exection test case we will see video
                     put("enableVideo", false); //if true while execution it will save the video
                     put("env", new ArrayList<String>() {{add("TZ=UTC"); }});
