@@ -31,7 +31,6 @@ public final class DriverFactory {
             if(runmode.equalsIgnoreCase("remote")) {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
-                options.setHeadless(true);
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 cap.setBrowserName(BrowserType.CHROME);
