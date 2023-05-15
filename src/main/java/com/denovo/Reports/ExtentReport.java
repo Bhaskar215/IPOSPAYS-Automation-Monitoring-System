@@ -35,12 +35,12 @@ public final class ExtentReport {
         if (Objects.nonNull(extent)) {
             extent.flush();
             ExtentManager.unload();
-            try {
+          /*  try {
                 Desktop.getDesktop().browse(new File(FrameWorkConstants.getExtentReportFilePath())
                         .toURI());
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     }
 
