@@ -19,3 +19,20 @@ services:
     ports:
       - "8090:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
+
+  jenkins:
+    image: "jenkins/jenkins:lts-jdk11"
+    volumes:
+      - E:\jenkins_home:/var/jenkins_home
+    network_mode: bridge
+    depends_on:
+      - selenoid
+    links:
+      - selenoid
+    ports:
+      - "8081:8080"
+      - "50000:50000"
+
+
+
+
