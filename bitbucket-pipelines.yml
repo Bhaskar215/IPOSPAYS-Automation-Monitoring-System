@@ -13,7 +13,6 @@ pipelines:
 
     - step:
         name: Build and Test
-        image: ubuntu:latest
         caches:
           - maven
         script:
