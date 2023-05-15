@@ -1,11 +1,14 @@
+options:
+  docker: true
+
 image: maven:3.6.3-jdk-11
 pipelines:
-  default:
+  branches:
+    master:
     - step:
         name: Manual step
         script:
           - echo "This step runs once you click the 'Run' button"
-
 
     - step:
         name: Build and Test
@@ -13,3 +16,4 @@ pipelines:
           - maven
         script:
           - mvn clean test -Pweb
+
