@@ -3,7 +3,6 @@ pipelines:
   default:
     - step:
         name: Manual step
-        trigger: manual
         script:
           - echo "This step runs once you click the 'Run' button"
 
