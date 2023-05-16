@@ -1,9 +1,12 @@
 version: '3'
-
+networks:
+  selenoid:
+      external: true
 
 services:
   selenoid:
-    network_mode: bridge
+    networks:
+      selenoid: null
     image: aerokube/selenoid:latest-release
     volumes:
       - "/C/Users/MY PC/config:/etc/selenoid/"
@@ -11,13 +14,15 @@ services:
       - "/C/Users/MY PC/selenoid/video:/opt/selenoid/video/"
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=/C/Users/MY PC/selenoid/video
-
+    command: ["-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video",
+              -container-network", "selenoid"]
     ports:
       - "4444:4444"
 
   selenoid-ui:
     image: "aerokube/selenoid-ui"
-    network_mode: bridge
+    networks:
+      - selenoid
     links:
       - selenoid
     ports:
@@ -26,7 +31,6 @@ services:
 
   jenkins:
     image: "jenkins/jenkins:lts-jdk11"
-    network_mode: bridge
     volumes:
       - E:\jenkins_home:/var/jenkins_home
     depends_on:
@@ -35,3 +39,5 @@ services:
       - "8081:8080"
       - "50000:50000"
     restart: "always"
+    networks:
+      - selenoid
