@@ -1,8 +1,8 @@
 version: '3'
 networks:
   selenoid:
-      external:
-        name: selenoid
+      external: true
+
 
 services:
   selenoid:
@@ -30,14 +30,17 @@ services:
     command: ["--selenoid-uri", "http://selenoid:4444"]
 
   jenkins:
+    networks:
+      - selenoid
     image: "jenkins/jenkins:lts-jdk11"
     volumes:
       - E:\jenkins_home:/var/jenkins_home
+      - "/var/run/docker.sock:/var/run/docker.sock"
     depends_on:
       - selenoid
     ports:
-      - "8081:8080"
-      - "50000:50000"
+      - "127.0.0.1:8081:8080"
+      - "127.0.0.1:50000:50000"
     restart: "always"
-    networks:
-      - selenoid
+    container_name: "jenkins"
+
