@@ -15,7 +15,7 @@ services:
       - "/C/Users/MY PC/selenoid/video:/opt/selenoid/video/"
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=/C/Users/MY PC/selenoid/video
-    command: ["-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video","-container-network","selenoid"]
+    command: ["-conf", "/etc/selenoid/browsers.json", "-video-output-dir", "/opt/selenoid/video","-container-network", "selenoid"]
     ports:
       - "4444:4444"
 
