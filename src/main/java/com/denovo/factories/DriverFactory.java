@@ -34,10 +34,6 @@ public final class DriverFactory {
             if(runmode.equalsIgnoreCase("remote")) {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
-                System.out.println("================================");
-                System.out.println(options.getBrowserName());
-                System.out.println(options.getVersion());
-                System.out.println("================================");
 
 /*
                 options.addArguments("no-sandbox");
@@ -46,7 +42,6 @@ public final class DriverFactory {
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver.manage().window().fullscreen();
 */
-
                 options.setCapability("selenoid:options", new HashMap() {{
                     put("name", "Test badge...");
                     put("browserName","chrome");
@@ -59,10 +54,6 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
-                System.out.println("================================");
-                System.out.println(options.getBrowserName());
-                System.out.println(options.getVersion());
-                System.out.println("================================");
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();
@@ -73,16 +64,27 @@ public final class DriverFactory {
                 driver = new ChromeDriver();
             }
         }
-
-        else if (browser.equalsIgnoreCase("edge")) {
+        else if (browser.equalsIgnoreCase("safari")) {
             if (runmode.equalsIgnoreCase("remote")) {
-                DesiredCapabilities cap = new DesiredCapabilities();
-                cap.setBrowserName(BrowserType.EDGE);
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+                ChromeOptions options = new ChromeOptions();
+                options.setCapability("selenoid:options", new HashMap() {{
+                    put("name", "Test badge...");
+                    put("browserName","safari");
+                    put("browserVersion","15.0");
+                    put("sessionTimeout", "5m");
+                    put("screenResolution","1920x1080x24");
+                    put("enableVNC", true); // if true While exection test case we will see video
+                    put("enableVideo", false); //if true while execution it will save the video
+                    put("env", new ArrayList<String>() {{add("TZ=UTC"); }});
+                    put("labels", new HashMap<String, Object>()
+                    {{put("manual", "true");}});
+                }});
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+
             }
             else {
-                WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
             }
         }
         return driver;
