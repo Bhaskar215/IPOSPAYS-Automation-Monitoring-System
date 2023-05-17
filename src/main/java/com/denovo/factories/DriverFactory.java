@@ -35,14 +35,18 @@ public final class DriverFactory {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
 
+/*
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 cap.setBrowserName(BrowserType.CHROME);
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver.manage().window().fullscreen();
+*/
 
-                /*options.setCapability("selenoid:options", new HashMap() {{
+                options.setCapability("selenoid:options", new HashMap() {{
                     put("name", "Test badge...");
+                    put("browserName","chrome");
+                    put("browserVersion","111.0");
                     put("sessionTimeout", "5m");
                     put("screenResolution","1920x1080x24");
                     put("enableVNC", true); // if true While exection test case we will see video
@@ -54,7 +58,7 @@ public final class DriverFactory {
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();
-*/
+
             }
             else{
                 WebDriverManager.chromedriver().setup();
