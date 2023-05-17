@@ -34,6 +34,10 @@ public final class DriverFactory {
             if(runmode.equalsIgnoreCase("remote")) {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
+                System.out.println("================================");
+                System.out.println(options.getBrowserName());
+                System.out.println(options.getVersion());
+                System.out.println("================================");
 
 /*
                 options.addArguments("no-sandbox");
@@ -55,6 +59,10 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
+                System.out.println("================================");
+                System.out.println(options.getBrowserName());
+                System.out.println(options.getVersion());
+                System.out.println("================================");
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();

@@ -18,7 +18,6 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-
       - name: Start selenoid server
         uses: n-ton4/selenoid-github-action@master
         id: start-selenoid
