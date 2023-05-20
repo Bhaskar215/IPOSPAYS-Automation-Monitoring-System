@@ -19,7 +19,6 @@ pipelines:
           - mvn clean test -Psendemail
 
 
-
 definitions:
  services:
   selenium-chrome:
