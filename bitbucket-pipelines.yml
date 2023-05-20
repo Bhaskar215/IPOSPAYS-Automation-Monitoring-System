@@ -13,7 +13,7 @@ pipelines:
          caches:
           - maven
          script:
-          - docker-compose -f selenoid-docker-compose.yaml
+          - docker-compose -f selenoid-docker-compose.yaml up
           - mvn clean test -Pweb
 
 definitions:
