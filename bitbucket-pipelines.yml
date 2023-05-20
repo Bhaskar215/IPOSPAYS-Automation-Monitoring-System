@@ -1,3 +1,7 @@
+options:
+  max-time: 30
+  size: 2x
+
 image: maven:3.6.3-jdk-11
 pipelines:
   branches:
