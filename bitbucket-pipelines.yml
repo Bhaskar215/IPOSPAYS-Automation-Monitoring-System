@@ -17,7 +17,12 @@ pipelines:
          script:
           - mvn clean test -Pweb
 
+
+
+
 definitions:
  services:
   selenium-chrome:
    image: selenium/standalone-chrome:latest
+   ports:
+    - "4444:4444"
