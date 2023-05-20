@@ -1,22 +1,23 @@
-options:
-  size: 2x
-  ubuntu: true
 
 image: maven:3.6.3-jdk-11
 pipelines:
   branches:
     master:
-    - step:
-        name: Manual step
-        script:
+     - step:
+         name: Manual step
+         script:
           - echo "This step runs once you click the 'Run' button"
 
-    - step:
-        name: Build and Test
-        caches:
+     - step:
+         name: Build and Test
+         caches:
           - maven
-        services:
-          -
-        script:
+         services:
+           - selenium-chrome
+         script:
           - mvn clean test -Pweb
 
+definitions:
+ services:
+  selenium-chrome:
+   image: selenium/standalone-chrome:latest
