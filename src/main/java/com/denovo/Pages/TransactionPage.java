@@ -1,12 +1,11 @@
 package com.denovo.Pages;
 
-import com.denovo.Driver.DriverManager;
+
 import com.denovo.Reports.ExtentLogger;
 import com.denovo.enums.WaitStrategy;
 import com.denovo.factories.ExplicitWaitFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
+
 
 public class TransactionPage extends BasePage{
 
