@@ -12,13 +12,9 @@ pipelines:
          name: Build and Test
          caches:
           - maven
-         services:
-           - selenium-chrome
          script:
+          - docker-compose -f selenoid-docker-compose.yaml
           - mvn clean test -Pweb
-
-
-
 
 definitions:
  services:
@@ -26,3 +22,6 @@ definitions:
    image: selenium/standalone-chrome:latest
    ports:
     - "4444:4444"
+
+
+
