@@ -1,39 +1,20 @@
-
 image: maven:3.6.3-jdk-11
 pipelines:
   branches:
     master:
      - step:
-         name: Manual step
-         script:
-          - echo "This step runs once you click the 'Run' button"
-
-     - step:
          name: Build and Test
          caches:
           - maven
-          - docker
-          - pip
          services:
-           - docker
+           - selenium-chrome
          script:
-          - pip install docker-compose
-          - docker network create dockernet
-          - docker-compose -f selenoid-docker-compose.yaml build
-          - docker-compose -f selenoid-docker-compose.yaml up
           - mvn clean test -Pweb
-          - docker-compose -f selenoid-docker-compose.yaml down
+
 
 definitions:
-  services:
-    docker:
-      memory: 3072
-
-
-  #selenium-chrome:
-   #image: selenium/standalone-chrome:latest
-   #ports:
-    #- "4444:4444"
-
+ services:
+  selenium-chrome:
+   image: selenium/standalone-chrome:latest
 
 
