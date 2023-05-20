@@ -5,7 +5,7 @@
         <listener class-name="com.denovo.Listeners.MethodInterceptor"/>
         <listener class-name="com.denovo.Listeners.ListenerClass"/>
     </listeners>
-    <test name="RegressionTest" thread-count="1" parallel="methods">
+    <test name="RegressionTest" thread-count="3" parallel="methods">
         <classes>
                <!-- Merchant Creation with ISO LOGIN-->
             <class name="com.denovo.testscripts.SystemLoginDashboardTest"/>
