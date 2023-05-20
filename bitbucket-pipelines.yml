@@ -15,6 +15,16 @@ pipelines:
          script:
           - mvn clean test -Pweb
 
+after-script:
+  - if [[ BITBUCKET_EXIT_CODE -eq 0 ]]; then exit 0; else echo "Step failed"; fi;
+  - step:
+      name: send email
+      caches:
+        -maven
+      script:
+        - mvn clean test -Psendemail
+
+
 
 definitions:
  services:
