@@ -23,5 +23,3 @@ definitions:
  services:
   selenium-chrome:
    image: selenium/standalone-chrome:latest
-
-

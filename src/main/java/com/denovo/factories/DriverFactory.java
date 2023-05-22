@@ -55,13 +55,15 @@ public final class DriverFactory {
                     {{put("manual", "true");}});
                 }});
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-                driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
+                driver = new RemoteWebDriver(URI.create("http://172.21.0.2:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();
 
             }
             else{
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--remote-allow-origins=*");
+                driver = new ChromeDriver(options);
             }
         }
         else if (browser.equalsIgnoreCase("safari")) {
