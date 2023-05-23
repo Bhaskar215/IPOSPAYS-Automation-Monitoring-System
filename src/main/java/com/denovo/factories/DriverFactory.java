@@ -35,13 +35,15 @@ public final class DriverFactory {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
 
+/*
 
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver.manage().window().fullscreen();
+*/
 
-/*
+
                 options.setCapability("selenoid:options", new HashMap() {{
                     put("name", "Test badge...");
                     put("browserName","chrome");
@@ -56,9 +58,9 @@ public final class DriverFactory {
                 }});
 
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-                driver = new RemoteWebDriver(URI.create("http://172.21.0.2:4444/wd/hub").toURL(),options);
+                driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();
-*/
+
             }
             else{
                 WebDriverManager.chromedriver().setup();
