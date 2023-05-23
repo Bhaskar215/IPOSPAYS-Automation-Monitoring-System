@@ -80,7 +80,7 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+                driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
 
             }
             else {
