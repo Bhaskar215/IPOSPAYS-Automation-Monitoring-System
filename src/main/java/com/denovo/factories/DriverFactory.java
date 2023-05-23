@@ -35,8 +35,10 @@ public final class DriverFactory {
                 DesiredCapabilities cap = new DesiredCapabilities();
                 ChromeOptions options = new ChromeOptions();
 
+
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
+                options.setBinary("E:/jenkins_home/chromedriver_linux64/chromedriver.exe");
                 driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver.manage().window().fullscreen();
 
