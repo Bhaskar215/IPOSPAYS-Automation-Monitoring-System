@@ -38,9 +38,8 @@ public final class DriverFactory {
 
                 options.addArguments("no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
-                cap.setBrowserName(BrowserType.CHROME);
-                cap.setVersion("111.0");
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+                options.setBinary("E:\\jenkins_home\\chromedriver_linux64\\chromedriver");
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver.manage().window().fullscreen();
 
 /*
@@ -56,11 +55,11 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
-*/
+
                // driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                 driver = new RemoteWebDriver(URI.create("http://172.21.0.2:4444/wd/hub").toURL(),options);
                 driver.manage().window().fullscreen();
-
+*/
             }
             else{
                 WebDriverManager.chromedriver().setup();
