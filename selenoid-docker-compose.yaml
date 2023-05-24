@@ -1,8 +1,8 @@
 version: '3'
 networks:
   selenoid:
-      external:
-        name: slenoid
+      external: true
+
 
 
 services:
@@ -45,4 +45,24 @@ services:
       - "50000:50000"
     restart: "always"
 
-
+  elasticsearch:
+    networks:
+      - selenoid
+    image: elasticsearch:7.17.10
+    environment:
+      - discovery.type=single-node
+    volumes:
+      - E:\elasticSearch\elasticData:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  kibana:
+    networks:
+      - selenoid
+    image: kibana:7.17.10
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch:elasticsearch
+    ports:
+      - "5601:5601"

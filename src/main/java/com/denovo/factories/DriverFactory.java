@@ -53,9 +53,11 @@ public final class DriverFactory {
                     {{put("manual", "true");}});
                 }});
 
-               driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
-               // driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
-                driver.manage().window().fullscreen();
+
+                 //selenoid:4444 for Running Jenkins with Docker
+                 driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
+                 //driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
+                 driver.manage().window().fullscreen();
 
             }
             else{
