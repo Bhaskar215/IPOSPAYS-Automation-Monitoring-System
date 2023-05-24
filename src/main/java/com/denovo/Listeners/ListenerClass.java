@@ -2,6 +2,7 @@ package com.denovo.Listeners;
 
 import com.denovo.Reports.ExtentLogger;
 import com.denovo.Reports.ExtentReport;
+import com.denovo.Util.ELKUtils;
 import org.testng.*;
 
 import java.io.IOException;
@@ -31,6 +32,7 @@ public class ListenerClass implements ITestListener, ISuiteListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         ExtentLogger.pass(result.getMethod().getMethodName() + " is Passed ");
+        ELKUtils.sendResultToELK(result.getMethod().getMethodName(),"pass");
     }
 
     @Override
@@ -38,6 +40,7 @@ public class ListenerClass implements ITestListener, ISuiteListener {
         try {
             ExtentLogger.fail(result.getMethod().getMethodName() + " is Failed",true);
             ExtentLogger.fail(result.getThrowable().toString());
+            ELKUtils.sendResultToELK(result.getMethod().getDescription(),"fail");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -46,6 +49,7 @@ public class ListenerClass implements ITestListener, ISuiteListener {
     @Override
     public void onTestSkipped(ITestResult result) {
         ExtentLogger.skip(result.getMethod().getMethodName() + " is Skiped");
+        ELKUtils.sendResultToELK(result.getMethod().getDescription(),"skip");
     }
 
     @Override
