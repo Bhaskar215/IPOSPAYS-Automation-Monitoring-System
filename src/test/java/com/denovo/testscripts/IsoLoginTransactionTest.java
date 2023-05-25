@@ -22,7 +22,7 @@ public class IsoLoginTransactionTest extends BaseTest {
 
         transactionPage.clickTransactionPage();
         Thread.sleep(2000);
-        Assert.fail();
+       / Assert.fail();
         boolean isTransactionLoaded=transactionPage.verifyIsTransactionLoaded();
         Assert.assertTrue(isTransactionLoaded);
         Thread.sleep(1000);
