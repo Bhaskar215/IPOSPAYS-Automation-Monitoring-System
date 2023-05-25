@@ -17,16 +17,17 @@ public class TransactionPage extends BasePage{
         click(clickTransactionPage,WaitStrategy.CLICKABLE);
     }
 
-    public void verifyIsTransactionLoaded() throws Exception {
+    public boolean verifyIsTransactionLoaded() throws Exception {
         boolean flag=false;
         try{
             long startTime=System.nanoTime();
             ExplicitWaitFactory.performExplicityWait(WaitStrategy.VISIABLE,transactionIsLoaded);
             flag=true;
             long elapsedTime=System.nanoTime() - startTime;
-            ExtentLogger.info("Transaction Page load taken time " +elapsedTime/1000000 + " sec ");
+            ExtentLogger.info("Transaction Page load taken time " +elapsedTime/1000000 + "mili sec ");
         }catch (Exception e){
             throw new Exception("Transaction Page Not Loaded");
         }
+        return flag;
     }
 }

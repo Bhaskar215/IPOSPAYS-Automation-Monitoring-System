@@ -3,6 +3,7 @@ package com.denovo.testscripts;
 import com.denovo.Pages.LoginPage;
 import com.denovo.Pages.TransactionPage;
 import com.denovo.Util.DataProviderUtil;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -22,8 +23,9 @@ public class SystemLoginTransactionTest extends BaseTest {
         transactionPage.clickTransactionPage();
         Thread.sleep(2000);
 
-        transactionPage.verifyIsTransactionLoaded();
-        Thread.sleep(2000);
+        boolean isTransactionLoaded=transactionPage.verifyIsTransactionLoaded();
+        Assert.assertTrue(isTransactionLoaded);
+        Thread.sleep(1000);
 
     }
 
