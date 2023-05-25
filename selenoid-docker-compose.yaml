@@ -4,7 +4,6 @@ networks:
       external: true
 
 
-
 services:
   selenoid:
     networks:
@@ -31,19 +30,6 @@ services:
       - "8090:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
 
-  jenkins:
-    networks:
-      - selenoid
-    image: "jenkins/jenkins:lts-jdk11"
-    volumes:
-      - E:\jenkins_home:/var/jenkins_home
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    depends_on:
-      - selenoid
-    ports:
-      - "8081:8080"
-      - "50000:50000"
-    restart: "always"
 
   elasticsearch:
     networks:
