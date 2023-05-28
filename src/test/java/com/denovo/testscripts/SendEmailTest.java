@@ -3,7 +3,10 @@ package com.denovo.testscripts;
 import org.testng.annotations.Test;
 
 import javax.mail.*;
-import javax.mail.internet.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.util.Properties;
 
@@ -52,27 +55,35 @@ public class SendEmailTest {
         });
 
         Message message = new MimeMessage(session);
-        message.setSubject("IPOSPAYS MONITOR SYSTEM REPORT");
+        message.setFrom(new InternetAddress("bmurthy@denovosystem.com","Portal Automation Monitoring Report"));
+        message.setSubject("IPOSPAYS MONITOR SYSTEM FAILED REPORT");
 
         Address addressTo = new InternetAddress("bhaskarmurthy215@gmail.com");
         message.setRecipient(Message.RecipientType.TO,addressTo);
+        //message.setRecipient(Message.RecipientType.CC,);
 
 
         //To send Multiple people
-        // Address address2To = new InternetAddress("bhaskarmurthy@gmail.com");
-        // message.addRecipient(Message.RecipientType.TO,address2To);
+        Address address2To = new InternetAddress("ITteam@paperpapyrus.com");
+        Address address3To = new InternetAddress("venkat@paperpapyrus.com");
+        Address address4To = new InternetAddress("sam@paperpapyrus.com");
+        message.addRecipient(Message.RecipientType.TO,address2To);
+        message.addRecipient(Message.RecipientType.TO,address3To);
+        message.addRecipient(Message.RecipientType.TO,address4To);
+
+
 
         MimeMultipart multipart = new MimeMultipart();
+
+        MimeBodyPart messageBodyPart = new MimeBodyPart();
+        // messageBodyPart.setContent("<h1>IPOSPAYS Portal FAILED REPORT</h1>","text/html");
 
         MimeBodyPart attachment = new MimeBodyPart();
         attachment.attachFile(new File("extent-test-output/ExtentReport.html"));
 
-        MimeBodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setContent("<h1>IPOSPAYS FAILED FAILED REPORT<h1>","text/html");
-
         multipart.addBodyPart(messageBodyPart);
         multipart.addBodyPart(attachment);
-        messageBodyPart.setText("Hi Team, PFA ExtentReport Failed Details,Download the Extent Report and verify.");
+        messageBodyPart.setText("Hi Team, Uat IPOSPAYS PORTAL Testcase getting Failed. Please find the  ExtentReport html Report, Download the Extent Report and verify.\nThanks & regards\nAutomation Team");
         message.setContent(multipart);
         send(message);
 
