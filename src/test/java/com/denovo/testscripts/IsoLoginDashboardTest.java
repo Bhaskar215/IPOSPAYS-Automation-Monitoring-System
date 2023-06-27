@@ -16,7 +16,7 @@ public class IsoLoginDashboardTest extends BaseTest {
     DashboardPage dashboardPage = new DashboardPage();
 
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",description = "To Check Dashboard Page Loading On System Login")
     public void validateDashboardOnISOLogin(Map<String, String> data) {
         loginPage.verifyLoginWithCorrectCredentials(data.get("ISOPrimaryEmail"), data.get("ISOPrimaryPWD"));
         boolean isDashboardPage = dashboardPage.verifyDashboardIsLoaded();
