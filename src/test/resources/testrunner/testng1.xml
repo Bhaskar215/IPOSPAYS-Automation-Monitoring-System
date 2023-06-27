@@ -16,6 +16,8 @@
             
             <class name="com.denovo.testscripts.IsoLoginTransactionTest"/>
 
+            <class name="com.denovo.testscripts.SystemLoginMerchantTest"/>
+
         </classes>
     </test>
 </suite>

@@ -11,11 +11,14 @@ import java.util.Objects;
 
 public final class ExtentReport {
 
-    private ExtentReport(){}
+    private ExtentReport(){
+
+    }
 
     private static ExtentReports extent;
 
-    public static void initReport(){
+    public static void initReport()
+    {
         if(Objects.isNull(extent)) {
             extent = new ExtentReports();
             ExtentSparkReporter spark = null;
@@ -44,7 +47,8 @@ public final class ExtentReport {
         }
     }
 
-    public static void createTest(String testcasename){
+    public static void createTest(String testcasename)
+    {
         ExtentManager.SetExtentTest(extent.createTest(testcasename).assignAuthor("Bhaskar Murthy").assignCategory("Regression"));
     }
 }

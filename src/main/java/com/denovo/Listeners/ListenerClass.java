@@ -33,14 +33,20 @@ public class ListenerClass implements ITestListener, ISuiteListener {
     public void onTestSuccess(ITestResult result) {
         ExtentLogger.pass(result.getMethod().getMethodName() + " is Passed ");
         ELKUtils.sendResultToELK(result.getMethod().getMethodName(),"pass");
+
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         try {
             ExtentLogger.fail(result.getMethod().getMethodName() + " is Failed",true);
+
             ExtentLogger.fail(result.getThrowable().toString());
+
             ELKUtils.sendResultToELK(result.getMethod().getDescription(),"fail");
+
+            ELKUtils.sendfailureMessageToElk(result.getThrowable().toString());
+
         } catch (Exception e) {
             e.printStackTrace();
         }

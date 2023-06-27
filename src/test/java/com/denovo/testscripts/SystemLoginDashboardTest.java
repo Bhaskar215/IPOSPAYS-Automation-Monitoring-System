@@ -16,13 +16,12 @@ public class SystemLoginDashboardTest extends BaseTest{
     DashboardPage dashboardPage = new DashboardPage();
 
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",description = "To check DashboardPage Loading On System Login")
     public void validateDashboardOnSystemLogin(Map<String,String> data) throws InterruptedException {
         loginPage.verifyLoginWithCorrectCredentials(data.get("SystemPrimaryEmail"),data.get("SystemPrimaryPWD"));
         boolean isDashboardPage=dashboardPage.verifyDashboardIsLoaded();
-        Assert.assertTrue(isDashboardPage);
+        Assert.assertTrue(isDashboardPage,"DashboardPage");
         //Assert.fail();
-
     }
 
     @DataProvider

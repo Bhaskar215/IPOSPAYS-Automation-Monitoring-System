@@ -37,4 +37,51 @@ public class ELKUtils {
             response.prettyPrint();
         }
     }
+
+    public static void sendTxPageLodingTimeToELK(String txpageLoadTime){
+        boolean elk = ReadPropertyFile.getValue(ConfigProperties.SENDRESULTTOELK).equalsIgnoreCase("yes");
+        if(elk){
+            Map<String,String> map2=new HashMap<>();
+            map2.put("TxpageLoadTime",txpageLoadTime);
+            map2.put("ExecutionTime", LocalDateTime.now().toString());
+            Response response = given().headers("Content-Type","application/json")
+                    .log()
+                    .all()
+                    .body(map2)
+                    .post("http://localhost:9200/regression/result");
+
+            response.prettyPrint();
+        }
+    }
+
+    public static void sendMerchantPageLodingTimeToELK(String merchantpageLoadTime){
+        boolean elk = ReadPropertyFile.getValue(ConfigProperties.SENDRESULTTOELK).equalsIgnoreCase("yes");
+        if(elk){
+            Map<String,String> map2=new HashMap<>();
+            map2.put("MerchantPageLoadTime",merchantpageLoadTime);
+            map2.put("ExecutionTime", LocalDateTime.now().toString());
+            Response response = given().headers("Content-Type","application/json")
+                    .log()
+                    .all()
+                    .body(map2)
+                    .post("http://localhost:9200/regression/result");
+            response.prettyPrint();
+        }
+    }
+
+    public static void sendfailureMessageToElk(String failureMsg){
+        boolean elk = ReadPropertyFile.getValue(ConfigProperties.SENDRESULTTOELK).equalsIgnoreCase("yes");
+        if(elk){
+            Map<String,String> map2=new HashMap<>();
+            map2.put("FailureMsg",failureMsg);
+            map2.put("ExecutionTime", LocalDateTime.now().toString());
+            Response response = given().headers("Content-Type","application/json")
+                    .log()
+                    .all()
+                    .body(map2)
+                    .post("http://localhost:9200/regression/result");
+
+            response.prettyPrint();
+        }
+    }
 }

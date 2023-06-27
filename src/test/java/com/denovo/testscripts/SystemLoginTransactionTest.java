@@ -3,6 +3,7 @@ package com.denovo.testscripts;
 import com.denovo.Pages.LoginPage;
 import com.denovo.Pages.TransactionPage;
 import com.denovo.Util.DataProviderUtil;
+import org.assertj.core.api.Assertions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,7 +16,7 @@ public class SystemLoginTransactionTest extends BaseTest {
     LoginPage loginPage = new LoginPage();
     TransactionPage transactionPage = new TransactionPage();
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",description = "To Check Transaction Page Loading On System Login ")
     public void validateTransactionPageOnSystemLogin(Map<String,String>data) throws Exception {
 
         loginPage.verifyLoginWithCorrectCredentials(data.get("SystemPrimaryEmail"),data.get("SystemPrimaryPWD"));
@@ -23,10 +24,12 @@ public class SystemLoginTransactionTest extends BaseTest {
         transactionPage.clickTransactionPage();
         Thread.sleep(2000);
 
-        boolean isTransactionLoaded=transactionPage.verifyIsTransactionLoaded();
-        Assert.assertTrue(isTransactionLoaded);
-        Thread.sleep(1000);
+        String isTxPageLoadMoreThan5Sec=transactionPage.verifyIsTransactionLoaded();
 
+        Assertions.assertThat(isTxPageLoadMoreThan5Sec)
+                .withFailMessage("Transaction Loading TimeTaken More that 6 seconds on System Login")
+                .isLessThanOrEqualTo("6");
+        Thread.sleep(1000);
 
     }
 
