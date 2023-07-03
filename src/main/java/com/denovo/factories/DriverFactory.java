@@ -82,8 +82,8 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
-                //driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
-                driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
+                driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
+                //driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
             }
             else {
                 WebDriverManager.chromedriver().setup();
