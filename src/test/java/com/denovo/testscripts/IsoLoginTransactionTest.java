@@ -28,7 +28,7 @@ public class IsoLoginTransactionTest extends BaseTest {
         String isTxPageLoadMoreThan5Sec=transactionPage.verifyIsTransactionLoaded();
 
         Assertions.assertThat(isTxPageLoadMoreThan5Sec)
-                        .withFailMessage("Transaction Loading TimeTaken More that 6 seconds on ISO Login")
+                        .withFailMessage("Iso Login Transaction Page Loading TimeTaken More that " + isTxPageLoadMoreThan5Sec + " seconds on ISO Login")
                 .isLessThanOrEqualTo("6");
         Thread.sleep(1000);
     }

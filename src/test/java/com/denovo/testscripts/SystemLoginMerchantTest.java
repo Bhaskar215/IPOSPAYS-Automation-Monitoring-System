@@ -27,7 +27,7 @@ public class SystemLoginMerchantTest extends BaseTest {
         String isMerchantPageLoadMoreThan5Sec = merchantPage.verifyIsMerchantLoaded();
 
         Assertions.assertThat(isMerchantPageLoadMoreThan5Sec)
-                        .withFailMessage("Merchant Module Loading TimeTaken More that 6 seconds on ISO Login")
+                        .withFailMessage("Merchant Module Loading TimeTaken More that " + isMerchantPageLoadMoreThan5Sec + " seconds on ISO Login")
                 .isLessThanOrEqualTo("6");
         Thread.sleep(1000);
     }

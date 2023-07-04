@@ -27,7 +27,7 @@ public class SystemLoginTransactionTest extends BaseTest {
         String isTxPageLoadMoreThan5Sec=transactionPage.verifyIsTransactionLoaded();
 
         Assertions.assertThat(isTxPageLoadMoreThan5Sec)
-                .withFailMessage("Transaction Loading TimeTaken More that 6 seconds on System Login")
+                .withFailMessage("Transaction loading took more then  " + isTxPageLoadMoreThan5Sec + " seconds on System Login")
                 .isLessThanOrEqualTo("6");
         Thread.sleep(1000);
 

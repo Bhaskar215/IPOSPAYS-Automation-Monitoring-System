@@ -1,6 +1,7 @@
 package com.denovo.Pages;
 
 
+import com.aventstack.extentreports.gherkin.model.ScenarioOutline;
 import com.denovo.Reports.ExtentLogger;
 import com.denovo.Util.ELKUtils;
 import com.denovo.enums.WaitStrategy;
@@ -35,13 +36,15 @@ public class TransactionPage extends BasePage{
             long endTime=System.nanoTime();
             long elapsedTime = endTime - startTime;
 
-
             //TimeUnit
              TxpageLoadingTimeTaken = TimeUnit.SECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS);
+              System.out.println("==================================");
+              System.out.println(TxpageLoadingTimeTaken);
+              System.out.println("==================================");
 
-            ELKUtils.sendTxPageLodingTimeToELK(String.valueOf(TxpageLoadingTimeTaken));
+             ELKUtils.sendTxPageLodingTimeToELK(String.valueOf(TxpageLoadingTimeTaken));
 
-            ExtentLogger.info("Transaction Page load taken time " + TxpageLoadingTimeTaken + " seconds ");
+             ExtentLogger.info("Transaction Page load taken time " + TxpageLoadingTimeTaken + " seconds ");
 
         }catch (Exception e){
             throw new Exception("Transaction Page Not Loaded");
