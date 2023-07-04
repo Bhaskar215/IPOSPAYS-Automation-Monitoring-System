@@ -53,6 +53,8 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+
+
   kibana:
     networks:
       - selenoid
@@ -63,3 +65,4 @@ services:
       - elasticsearch:elasticsearch
     ports:
       - "5601:5601"
+    command: ["--kibana-uri", "http://kibana:5601"]
