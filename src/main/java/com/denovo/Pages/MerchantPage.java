@@ -38,7 +38,7 @@ public class MerchantPage extends BasePage {
 
             //ELKUtils.sendMerchantPageLodingTimeToELK(String.valueOf(MerchantpageLoadingTimeTaken));
 
-            ExtentLogger.info("Transaction Page load taken time " + MerchantpageLoadingTimeTaken + " seconds ");
+            ExtentLogger.info("Merchant Page load taken time: " + MerchantpageLoadingTimeTaken + " seconds ");
 
         }catch (Exception e){
             throw new Exception("Merchant Page Not Loaded");
