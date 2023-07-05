@@ -55,8 +55,8 @@ public final class DriverFactory {
 
 
                  //selenoid:4444 for Running Jenkins with Docker
-                 driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
-                //driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
+                 //driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
+                 driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
                 // driver = new RemoteWebDriver(new URL("http://3.90.149.206:4444"), options);
                  driver.manage().window().fullscreen();
 
@@ -83,9 +83,9 @@ public final class DriverFactory {
                     put("labels", new HashMap<String, Object>()
                     {{put("manual", "true");}});
                 }});
-                driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
+                //driver = new RemoteWebDriver(new URL("http://selenoid:4444/wd/hub"), options);
                 //driver = new RemoteWebDriver(new URL("http://3.90.149.206:4444/wd/hub"), options);
-               // driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
+                driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),options);
             }
             else {
                 WebDriverManager.chromedriver().setup();
