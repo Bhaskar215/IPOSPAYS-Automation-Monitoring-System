@@ -21,10 +21,10 @@ public final class Driver {
 
     }
 
-    public static void initDriver(String browser) {
+    public static void initDriver(String browser,String TestName) {
         if(Objects.isNull(DriverManager.getDriver())){
             try {
-                DriverManager.SetDriver(DriverFactory.getDriver(browser));
+                DriverManager.SetDriver(DriverFactory.getDriver(browser,TestName));
             }  catch (MalformedURLException e) {
                 throw new BrowserInvocationFailedException("Please check the capabilities of the Browser");
             }
